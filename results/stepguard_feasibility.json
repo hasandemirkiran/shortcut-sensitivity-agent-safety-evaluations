@@ -1,0 +1,53 @@
+{
+  "artifact_kind": "one_row_feasibility_gate",
+  "claim_boundary": "formatter, checkpoint, greedy generation, and parser completed one MPS case; this is not a benchmark result or an official-runtime reproduction",
+  "code_revision": "47c9011ee73c90be403846d35476ec55d5dab63b",
+  "cohort": {
+    "base_sample_id": "5d31b5c0c53f5910f2bd",
+    "condition": "original",
+    "derived_sample_id": "fdc225ef2dd27920652b",
+    "domain": "banking",
+    "gold_strict_decision": 0
+  },
+  "model": {
+    "bf16_weight_bytes": 8044936192,
+    "model_id": "ninty-seven/StepGuard",
+    "revision": "c322d1ec2de38f204498d45f79646c6e80a0ea7e",
+    "weight_sha256": [
+      "b0d9e0d6e54132465475858bc6ff05acde616517a4134307362244ee034afb76",
+      "d72d5761c6b69d847253e208cafb93353da3694328878be4c85a4345c9510c4a"
+    ]
+  },
+  "pilot": {
+    "generation_seconds": 45.93,
+    "input_tokens": 2207,
+    "model_load_seconds": 3.0,
+    "output_tokens": 221,
+    "parsed_strict_decision": 0,
+    "parser_confidence": 1.0,
+    "prompt_sha256": "3fbff0b5b0ab4332fc839948ea3619d01b54c0d6357aed4d8224879136a8d305"
+  },
+  "raw_record_artifact": {
+    "bytes": 2459,
+    "records": 1,
+    "sha256": "31348dbba250427da2341ea3c4593627adb978bb8277643ce1c81f9addf82ac5",
+    "shipped": false
+  },
+  "runtime": {
+    "backend": "MPS",
+    "host_architecture": "arm64",
+    "host_memory_gib": 24,
+    "mps_driver_allocation_after_load_gb": 8.05,
+    "mps_peak_driver_allocation_gb": 26.72,
+    "operating_system": "macOS 26.5.2",
+    "precision": "BF16",
+    "pytorch_version": "2.13.0",
+    "transformers_version": "5.14.1"
+  },
+  "tokenizer_census_64_originals": {
+    "maximum_input_tokens": 12100,
+    "mean_input_tokens": 2816,
+    "median_input_tokens": 1877,
+    "p95_input_tokens": 9675
+  }
+}

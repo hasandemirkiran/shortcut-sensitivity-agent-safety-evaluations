@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "toolsafe-lab"
+version = "0.1.0"
+description = "Reproducible TS-Bench experiments for accurate, low-overhead tool-call guardrails"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "httpx>=0.28,<1",
+  "joblib>=1.4,<2",
+  "numpy>=1.26,<3",
+  "psutil>=6,<8",
+  "scikit-learn>=1.5,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<10",
+  "ruff>=0.9,<1",
+]
+embeddings = [
+  "sentence-transformers>=5,<6",
+]
+encoders = [
+  "protobuf>=5,<7",
+  "sentencepiece>=0.2,<1",
+  "torch>=2,<3",
+  "transformers>=5,<6",
+]
+local-llm = [
+  "accelerate>=1,<2",
+  "protobuf>=5,<7",
+  "sentencepiece>=0.2,<1",
+  "torch>=2,<3",
+  "transformers>=5,<6",
+]
+local-mlx = [
+  "mlx==0.32.2",
+  "mlx-lm==0.31.3",
+  "mlx-metal==0.32.2",
+]
+local-training = [
+  "peft>=0.17,<1",
+  "protobuf>=5,<7",
+  "sentencepiece>=0.2,<1",
+  "torch>=2,<3",
+  "transformers>=5,<6",
+]
+paper = [
+  "matplotlib>=3.9,<4",
+]
+
+[project.scripts]
+toolsafe-lab = "toolsafe_lab.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/toolsafe_lab"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

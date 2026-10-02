@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "model": "GPT-5.5",
+  "api_model": "gpt-5.5",
+  "resolved_model": "gpt-5.5-2026-04-23",
+  "reasoning_effort": "medium",
+  "prompt": {
+    "version": "authors_v2_structured",
+    "sha256": "0e6dd5de7686d45e7fb54d999bf58b5959191d247820d84bc1d095f3d52b1c2f"
+  },
+  "counterfactual_run": {
+    "rows": 256,
+    "valid_rows": 256,
+    "raw_source_sha256": "12fcf4a1fe4e0004dd8cbf3013aed2416b789f7b7729a40cb2b9058f01ee859c",
+    "usage": {
+      "input_tokens": 721558,
+      "output_tokens": 48653,
+      "reasoning_tokens": 39579,
+      "estimated_cost_usd": 5.06738
+    }
+  },
+  "accuracy_deltas": {
+    "definition": "transformed_minus_original",
+    "bootstrap": {
+      "clusters": "base_sample_id",
+      "strata": "domain_x_original_gold_label",
+      "replicates": 10000,
+      "seed": 260828
+    },
+    "marker_paraphrase": {
+      "point": -0.015625,
+      "lower": -0.0625,
+      "upper": 0.03125
+    },
+    "tool_alias": {
+      "point": -0.015625,
+      "lower": -0.046875,
+      "upper": 0.0
+    },
+    "combined": {
+      "point": 0.0,
+      "lower": -0.046875,
+      "upper": 0.046875
+    }
+  },
+  "prior_original_repeat_comparison": {
+    "note": "Post-hoc comparison with a prior, non-interleaved evaluation run on byte-identical rendered originals.",
+    "n": 64,
+    "strict_decision_agreement": 63,
+    "strict_decision_disagreement": 1,
+    "complete_component_agreement": 35,
+    "complete_component_disagreement": 29,
+    "prior_run_raw_source_sha256": "29ff0f3cf457b24df9cf5a949bc5590268348ac1c9f826443bed10f26630fdac",
+    "counterfactual_run_raw_source_sha256": "12fcf4a1fe4e0004dd8cbf3013aed2416b789f7b7729a40cb2b9058f01ee859c"
+  },
+  "raw_text_in_summary": false
+}

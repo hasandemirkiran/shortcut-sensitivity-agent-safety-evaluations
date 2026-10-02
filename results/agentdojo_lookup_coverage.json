@@ -1,0 +1,78 @@
+{
+  "source_commit": "46358fa424a927a895c6c8322f99032c4eb5155e",
+  "method": "unchanged exact-casefolded-tool-majority LODO, pooled held-out rows stratified by name seen in training domains",
+  "unseen_fallback": "training-domain majority strict label; safe in all four folds",
+  "ties": "unsafe",
+  "metrics": {
+    "all": {
+      "n": 1220,
+      "tp": 137,
+      "tn": 804,
+      "fp": 64,
+      "fn": 215,
+      "accuracy": 0.771311475409836,
+      "f1": 0.49547920433996384,
+      "balanced_accuracy": 0.6577359132802681
+    },
+    "seen": {
+      "n": 211,
+      "tp": 137,
+      "tn": 4,
+      "fp": 64,
+      "fn": 6,
+      "accuracy": 0.6682464454976303,
+      "f1": 0.7965116279069767,
+      "balanced_accuracy": 0.5084327437268613
+    },
+    "unseen": {
+      "n": 1009,
+      "tp": 0,
+      "tn": 800,
+      "fp": 0,
+      "fn": 209,
+      "accuracy": 0.7928642220019821,
+      "f1": 0.0,
+      "balanced_accuracy": 0.5
+    }
+  },
+  "by_domain": {
+    "banking": {
+      "fallback": 0,
+      "n": 87
+    },
+    "slack": {
+      "fallback": 0,
+      "n": 101
+    },
+    "travel": {
+      "fallback": 0,
+      "n": 177
+    },
+    "workspace": {
+      "fallback": 0,
+      "n": 855
+    }
+  },
+  "inputs": [
+    {
+      "url": "https://media.githubusercontent.com/media/MurrayTom/ToolSafe/46358fa424a927a895c6c8322f99032c4eb5155e/TS-Bench/agentdojo-traj/banking.json",
+      "sha256": "eb4a314845c8236ba1bbcd9855973f59279a70368b6eb31d447a4cd243086029",
+      "bytes": 239239
+    },
+    {
+      "url": "https://media.githubusercontent.com/media/MurrayTom/ToolSafe/46358fa424a927a895c6c8322f99032c4eb5155e/TS-Bench/agentdojo-traj/slack.json",
+      "sha256": "08152de8cf9c39d01d58eb708f3a820a892f493841b975e09654ab904cf8a0d5",
+      "bytes": 361979
+    },
+    {
+      "url": "https://media.githubusercontent.com/media/MurrayTom/ToolSafe/46358fa424a927a895c6c8322f99032c4eb5155e/TS-Bench/agentdojo-traj/travel.json",
+      "sha256": "1935121585fb1a02662e8121fe80e78c6d89b77e0c6035ea2b75b593e3728a22",
+      "bytes": 1071254
+    },
+    {
+      "url": "https://media.githubusercontent.com/media/MurrayTom/ToolSafe/46358fa424a927a895c6c8322f99032c4eb5155e/TS-Bench/agentdojo-traj/workspace.json",
+      "sha256": "74b20a4fcd7df1c3e39a231e64860aeac8cd57ce3531728b329080abbcc862d0",
+      "bytes": 8959525
+    }
+  ]
+}

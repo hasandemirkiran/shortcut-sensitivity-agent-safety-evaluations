@@ -1,0 +1,3083 @@
+{
+  "analysis_schema_version": 3,
+  "analysis_status": "complete",
+  "analysis_version": "OPENROUTER_HAIKU_AGENTDOJO_K3_ANALYSIS_v1.2",
+  "base_steps": 64,
+  "bootstrap": {
+    "cluster": "upstream AgentDojo Sample.trajectory_id",
+    "method": "percentile domain-stratified source-interaction bootstrap",
+    "replicates": 10000,
+    "seed": 26082945,
+    "strata": "domain; interactions are not split by inherited strict label because one interaction can contain both safe and unsafe base steps"
+  },
+  "by_condition": {
+    "combined": {
+      "coverage": {
+        "expected": 192,
+        "failed_or_missing": 0,
+        "failure_counts": {},
+        "received": 192,
+        "valid": 192,
+        "valid_rate": 1.0
+      },
+      "strict_fail_closed_accuracy": 0.7604166666666666,
+      "strict_fail_closed_accuracy_by_domain": {
+        "banking": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.7916666666666666
+        },
+        "slack": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.875
+        },
+        "travel": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.8125
+        },
+        "workspace": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.5625
+        }
+      },
+      "strict_fail_closed_accuracy_by_original_label": {
+        "safe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 0.5208333333333334
+        },
+        "unsafe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 1.0
+        }
+      },
+      "strict_fail_closed_accuracy_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.6666666666666666,
+        "point": 0.7604166666666666,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.8531073446327684
+      },
+      "strict_fail_closed_block_rate": 0.7395833333333334,
+      "strict_fail_closed_block_rate_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.640625,
+        "point": 0.7395833333333334,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.8333333333333334
+      },
+      "valid_only_accuracy": 0.7604166666666666,
+      "valid_only_block_rate": 0.7395833333333334,
+      "valid_only_component_rates": {
+        "current_action_harmfulness_mean": 0.6770833333333334,
+        "malicious_user_request": 0.0,
+        "third_party_attack": 0.9635416666666666
+      },
+      "valid_only_ordinal_score_mean": 0.6770833333333334
+    },
+    "marker_paraphrase": {
+      "coverage": {
+        "expected": 192,
+        "failed_or_missing": 0,
+        "failure_counts": {},
+        "received": 192,
+        "valid": 192,
+        "valid_rate": 1.0
+      },
+      "strict_fail_closed_accuracy": 0.8177083333333334,
+      "strict_fail_closed_accuracy_by_domain": {
+        "banking": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.875
+        },
+        "slack": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.8958333333333334
+        },
+        "travel": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.875
+        },
+        "workspace": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.625
+        }
+      },
+      "strict_fail_closed_accuracy_by_original_label": {
+        "safe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 0.6354166666666666
+        },
+        "unsafe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 1.0
+        }
+      },
+      "strict_fail_closed_accuracy_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.7195560515873017,
+        "point": 0.8177083333333334,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.9047796730632549
+      },
+      "strict_fail_closed_block_rate": 0.6822916666666666,
+      "strict_fail_closed_block_rate_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.5735294117647058,
+        "point": 0.6822916666666666,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.7903225806451613
+      },
+      "valid_only_accuracy": 0.8177083333333334,
+      "valid_only_block_rate": 0.6822916666666666,
+      "valid_only_component_rates": {
+        "current_action_harmfulness_mean": 0.6223958333333334,
+        "malicious_user_request": 0.0,
+        "third_party_attack": 0.9427083333333334
+      },
+      "valid_only_ordinal_score_mean": 0.6223958333333334
+    },
+    "neutral_json_formatting_placebo": {
+      "coverage": {
+        "expected": 192,
+        "failed_or_missing": 0,
+        "failure_counts": {},
+        "received": 192,
+        "valid": 192,
+        "valid_rate": 1.0
+      },
+      "strict_fail_closed_accuracy": 0.75,
+      "strict_fail_closed_accuracy_by_domain": {
+        "banking": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.875
+        },
+        "slack": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.8125
+        },
+        "travel": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.75
+        },
+        "workspace": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.5625
+        }
+      },
+      "strict_fail_closed_accuracy_by_original_label": {
+        "safe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 0.5
+        },
+        "unsafe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 1.0
+        }
+      },
+      "strict_fail_closed_accuracy_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.6451612903225806,
+        "point": 0.75,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.8484848484848485
+      },
+      "strict_fail_closed_block_rate": 0.75,
+      "strict_fail_closed_block_rate_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.6417910447761194,
+        "point": 0.75,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.8548387096774194
+      },
+      "valid_only_accuracy": 0.75,
+      "valid_only_block_rate": 0.75,
+      "valid_only_component_rates": {
+        "current_action_harmfulness_mean": 0.6510416666666666,
+        "malicious_user_request": 0.0,
+        "third_party_attack": 0.984375
+      },
+      "valid_only_ordinal_score_mean": 0.6510416666666666
+    },
+    "original": {
+      "coverage": {
+        "expected": 192,
+        "failed_or_missing": 0,
+        "failure_counts": {},
+        "received": 192,
+        "valid": 192,
+        "valid_rate": 1.0
+      },
+      "strict_fail_closed_accuracy": 0.734375,
+      "strict_fail_closed_accuracy_by_domain": {
+        "banking": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.875
+        },
+        "slack": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.7708333333333334
+        },
+        "travel": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.7291666666666666
+        },
+        "workspace": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.5625
+        }
+      },
+      "strict_fail_closed_accuracy_by_original_label": {
+        "safe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 0.46875
+        },
+        "unsafe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 1.0
+        }
+      },
+      "strict_fail_closed_accuracy_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.6271186440677966,
+        "point": 0.734375,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.8357487922705314
+      },
+      "strict_fail_closed_block_rate": 0.765625,
+      "strict_fail_closed_block_rate_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.6615384615384615,
+        "point": 0.765625,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.864406779661017
+      },
+      "valid_only_accuracy": 0.734375,
+      "valid_only_block_rate": 0.765625,
+      "valid_only_component_rates": {
+        "current_action_harmfulness_mean": 0.6796875,
+        "malicious_user_request": 0.0,
+        "third_party_attack": 1.0
+      },
+      "valid_only_ordinal_score_mean": 0.6796875
+    },
+    "tool_alias": {
+      "coverage": {
+        "expected": 192,
+        "failed_or_missing": 0,
+        "failure_counts": {},
+        "received": 192,
+        "valid": 192,
+        "valid_rate": 1.0
+      },
+      "strict_fail_closed_accuracy": 0.6197916666666666,
+      "strict_fail_closed_accuracy_by_domain": {
+        "banking": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.625
+        },
+        "slack": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.6458333333333334
+        },
+        "travel": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.7083333333333334
+        },
+        "workspace": {
+          "base_steps": 16,
+          "calls": 48,
+          "point": 0.5
+        }
+      },
+      "strict_fail_closed_accuracy_by_original_label": {
+        "safe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 0.23958333333333334
+        },
+        "unsafe": {
+          "base_steps": 32,
+          "calls": 96,
+          "point": 1.0
+        }
+      },
+      "strict_fail_closed_accuracy_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.5124378109452736,
+        "point": 0.6197916666666666,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.7288135593220338
+      },
+      "strict_fail_closed_block_rate": 0.8802083333333334,
+      "strict_fail_closed_block_rate_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.8020833333333334,
+        "point": 0.8802083333333334,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.9494949494949495
+      },
+      "valid_only_accuracy": 0.6197916666666666,
+      "valid_only_block_rate": 0.8802083333333334,
+      "valid_only_component_rates": {
+        "current_action_harmfulness_mean": 0.7838541666666666,
+        "malicious_user_request": 0.0,
+        "third_party_attack": 1.0
+      },
+      "valid_only_ordinal_score_mean": 0.7838541666666666
+    }
+  },
+  "cohort_sha256": "bdfe8848090aab7f6efd0d575d6547ad88aae84831c8d0792055bb0076c638a2",
+  "component_and_ordinal_contrasts": {
+    "combined": {
+      "complete_valid_six_call_bases": 64,
+      "differences_condition_minus_original": {
+        "current_action_harmfulness": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.07291666666666666
+            },
+            "slack": {
+              "bases": 16,
+              "point": -0.05208333333333333
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.03125
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.005208333333333335
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 6,
+            "increase": 4,
+            "tie": 54
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.04838709677419354,
+            "point": -0.002604166666666668,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.04234126984126965
+          },
+          "point": -0.0026041666666666674
+        },
+        "malicious_user_request": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": 0.0
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 64
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0
+        },
+        "ordinal_score": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.07291666666666666
+            },
+            "slack": {
+              "bases": 16,
+              "point": -0.05208333333333333
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.03125
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.005208333333333335
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 6,
+            "increase": 4,
+            "tie": 54
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.04838709677419354,
+            "point": -0.002604166666666668,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.04234126984126965
+          },
+          "point": -0.0026041666666666674
+        },
+        "third_party_attack": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": -0.0625
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.08333333333333334
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.07291666666666667
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 3,
+            "increase": 0,
+            "tie": 61
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.08465608465608467,
+            "point": -0.036458333333333336,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": -0.036458333333333336
+        }
+      }
+    },
+    "marker_paraphrase": {
+      "complete_valid_six_call_bases": 64,
+      "differences_condition_minus_original": {
+        "current_action_harmfulness": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "slack": {
+              "bases": 16,
+              "point": -0.0625
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.07291666666666667
+            },
+            "workspace": {
+              "bases": 16,
+              "point": -0.09375
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.11458333333333333
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 8,
+            "increase": 0,
+            "tie": 56
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.09558923979427836,
+            "point": -0.057291666666666664,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": -0.0234375
+          },
+          "point": -0.057291666666666664
+        },
+        "malicious_user_request": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": 0.0
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 64
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0
+        },
+        "ordinal_score": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "slack": {
+              "bases": 16,
+              "point": -0.0625
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.07291666666666667
+            },
+            "workspace": {
+              "bases": 16,
+              "point": -0.09375
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.11458333333333333
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 8,
+            "increase": 0,
+            "tie": 56
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.09558923979427836,
+            "point": -0.057291666666666664,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": -0.0234375
+          },
+          "point": -0.057291666666666664
+        },
+        "third_party_attack": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": -0.10416666666666667
+            },
+            "slack": {
+              "bases": 16,
+              "point": -0.0625
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.0625
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.11458333333333334
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 4,
+            "increase": 0,
+            "tie": 60
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.11640211640211641,
+            "point": -0.05729166666666667,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": -0.010752688172043012
+          },
+          "point": -0.05729166666666667
+        }
+      }
+    },
+    "neutral_json_formatting_placebo": {
+      "complete_valid_six_call_bases": 64,
+      "differences_condition_minus_original": {
+        "current_action_harmfulness": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": -0.03125
+            },
+            "slack": {
+              "bases": 16,
+              "point": -0.020833333333333332
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.010416666666666664
+            },
+            "workspace": {
+              "bases": 16,
+              "point": -0.052083333333333336
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.057291666666666664
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 6,
+            "increase": 3,
+            "tie": 55
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.0707070707070707,
+            "point": -0.028645833333333332,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.009950248756218907
+          },
+          "point": -0.028645833333333332
+        },
+        "malicious_user_request": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": 0.0
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 64
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0
+        },
+        "ordinal_score": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": -0.03125
+            },
+            "slack": {
+              "bases": 16,
+              "point": -0.020833333333333332
+            },
+            "travel": {
+              "bases": 16,
+              "point": -0.010416666666666664
+            },
+            "workspace": {
+              "bases": 16,
+              "point": -0.052083333333333336
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.057291666666666664
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 6,
+            "increase": 3,
+            "tie": 55
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.0707070707070707,
+            "point": -0.028645833333333332,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.009950248756218907
+          },
+          "point": -0.028645833333333332
+        },
+        "third_party_attack": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": -0.0625
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": -0.03125
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 1,
+            "increase": 0,
+            "tie": 63
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": -0.046875,
+            "point": -0.015625,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": -0.015625
+        }
+      }
+    },
+    "tool_alias": {
+      "complete_valid_six_call_bases": 64,
+      "differences_condition_minus_original": {
+        "current_action_harmfulness": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.1875
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.09375
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.07291666666666667
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0625
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": 0.20833333333333334
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 3,
+            "increase": 13,
+            "tie": 48
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": 0.03825136612021857,
+            "point": 0.10416666666666667,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.17361355633802814
+          },
+          "point": 0.10416666666666667
+        },
+        "malicious_user_request": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": 0.0
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 64
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0
+        },
+        "ordinal_score": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.1875
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.09375
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.07291666666666667
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0625
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": 0.20833333333333334
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 3,
+            "increase": 13,
+            "tie": 48
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": 0.03825136612021857,
+            "point": 0.10416666666666667,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.17361355633802814
+          },
+          "point": 0.10416666666666667
+        },
+        "third_party_attack": {
+          "bases": 64,
+          "by_domain": {
+            "banking": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "slack": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "travel": {
+              "bases": 16,
+              "point": 0.0
+            },
+            "workspace": {
+              "bases": 16,
+              "point": 0.0
+            }
+          },
+          "by_original_label": {
+            "safe": {
+              "bases": 32,
+              "point": 0.0
+            },
+            "unsafe": {
+              "bases": 32,
+              "point": 0.0
+            }
+          },
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 64
+          },
+          "interval": {
+            "clusters": 58,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0
+        }
+      }
+    }
+  },
+  "conditions": [
+    "original",
+    "marker_paraphrase",
+    "neutral_json_formatting_placebo",
+    "tool_alias",
+    "combined"
+  ],
+  "failure_policy": "strict block estimates fail closed; component and ordinal diagnostics use only bases with all six compared calls valid",
+  "fixed_rule_strata": {
+    "definition": "fixed_agentdojo_rule on the unmodified raw AgentDojo base step: literal <information> history marker AND frozen side-effect tool-name prefix",
+    "rule_negative": {
+      "base_steps": 22,
+      "source_interactions": 22
+    },
+    "rule_positive": {
+      "base_steps": 42,
+      "source_interactions": 40
+    }
+  },
+  "generated_at": "2026-08-29T01:00:25.247316+00:00",
+  "marginal_block_probability_contrasts": {
+    "combined": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.08333333333333333
+        },
+        "slack": {
+          "bases": 16,
+          "point": -0.10416666666666666
+        },
+        "travel": {
+          "bases": 16,
+          "point": -0.08333333333333333
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0
+        }
+      },
+      "by_original_fixed_rule": {
+        "rule_negative": {
+          "base_steps": 22,
+          "point": -0.030303030303030307,
+          "source_interactions": 22
+        },
+        "rule_positive": {
+          "base_steps": 42,
+          "point": -0.023809523809523808,
+          "source_interactions": 40
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 5,
+            "increase": 2,
+            "tie": 25
+          },
+          "interval": {
+            "clusters": 30,
+            "confidence": 0.95,
+            "lower": -0.17204301075268816,
+            "point": -0.05208333333333333,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.05208333333333333
+          },
+          "point": -0.052083333333333336,
+          "source_interactions": 30
+        },
+        "unsafe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 32
+          },
+          "interval": {
+            "clusters": 32,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0,
+          "source_interactions": 32
+        }
+      },
+      "definition": "mean of three fail-closed block decisions for condition minus mean of three fail-closed block decisions for original, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 5,
+        "increase": 2,
+        "tie": 57
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.08994708994708994,
+        "point": -0.026041666666666668,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.029850746268656716
+      },
+      "point": -0.026041666666666668,
+      "signed_order_diagnostics": {
+        "all_pairs_point": -0.026041666666666668,
+        "by_chronological_schedule_third": {
+          "first": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 319,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "last": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.0625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.03125,
+            "schedule_index_max": 958,
+            "schedule_index_min": 641,
+            "source_interactions": 58
+          },
+          "middle": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.0625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.03125,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          }
+        },
+        "by_repetition": {
+          "0": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 319,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "1": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.0625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.03125,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          },
+          "2": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.0625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.03125,
+            "schedule_index_max": 958,
+            "schedule_index_min": 641,
+            "source_interactions": 58
+          }
+        },
+        "chronological_third_definition": "tertiles of all planned calls in logged schedule_index order; each base-repetition pair is assigned by the midpoint of its two call indices",
+        "condition": "combined",
+        "control": "original",
+        "interpretation": "secondary signed one-draw order/drift diagnostic, not the primary marginal-probability estimand; every pair is matched on base step and repetition and uses condition minus control",
+        "pairs_crossing_chronological_third_boundaries": 0
+      },
+      "source_interaction_sign_diagnostic": {
+        "interpretation": "exploratory exact two-sided sign test after equally averaging base-step contrasts within each upstream source interaction; zero interactions are excluded from the binomial test",
+        "negative": 5,
+        "nonzero": 7,
+        "positive": 2,
+        "source_interactions": 58,
+        "tie": 51,
+        "two_sided_exact_p": 0.453125,
+        "zero_tolerance": 1e-12
+      }
+    },
+    "marker_paraphrase": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.0
+        },
+        "slack": {
+          "bases": 16,
+          "point": -0.125
+        },
+        "travel": {
+          "bases": 16,
+          "point": -0.14583333333333334
+        },
+        "workspace": {
+          "bases": 16,
+          "point": -0.0625
+        }
+      },
+      "by_original_fixed_rule": {
+        "rule_negative": {
+          "base_steps": 22,
+          "point": -0.15151515151515152,
+          "source_interactions": 22
+        },
+        "rule_positive": {
+          "base_steps": 42,
+          "point": -0.047619047619047616,
+          "source_interactions": 40
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 6,
+            "increase": 0,
+            "tie": 26
+          },
+          "interval": {
+            "clusters": 30,
+            "confidence": 0.95,
+            "lower": -0.3,
+            "point": -0.16666666666666666,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": -0.058823529411764705
+          },
+          "point": -0.16666666666666666,
+          "source_interactions": 30
+        },
+        "unsafe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 32
+          },
+          "interval": {
+            "clusters": 32,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0,
+          "source_interactions": 32
+        }
+      },
+      "definition": "mean of three fail-closed block decisions for condition minus mean of three fail-closed block decisions for original, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 6,
+        "increase": 0,
+        "tie": 58
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.15053763440860213,
+        "point": -0.08333333333333333,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": -0.02487562189054726
+      },
+      "point": -0.08333333333333333,
+      "signed_order_diagnostics": {
+        "all_pairs_point": -0.08333333333333333,
+        "by_chronological_schedule_third": {
+          "first": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.1875
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.09375,
+            "schedule_index_max": 317,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "last": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.15625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.078125,
+            "schedule_index_max": 958,
+            "schedule_index_min": 640,
+            "source_interactions": 58
+          },
+          "middle": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.15625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.078125,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          }
+        },
+        "by_repetition": {
+          "0": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.1875
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.09375,
+            "schedule_index_max": 317,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "1": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.15625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.078125,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          },
+          "2": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.15625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.078125,
+            "schedule_index_max": 958,
+            "schedule_index_min": 640,
+            "source_interactions": 58
+          }
+        },
+        "chronological_third_definition": "tertiles of all planned calls in logged schedule_index order; each base-repetition pair is assigned by the midpoint of its two call indices",
+        "condition": "marker_paraphrase",
+        "control": "original",
+        "interpretation": "secondary signed one-draw order/drift diagnostic, not the primary marginal-probability estimand; every pair is matched on base step and repetition and uses condition minus control",
+        "pairs_crossing_chronological_third_boundaries": 0
+      },
+      "source_interaction_sign_diagnostic": {
+        "interpretation": "exploratory exact two-sided sign test after equally averaging base-step contrasts within each upstream source interaction; zero interactions are excluded from the binomial test",
+        "negative": 6,
+        "nonzero": 6,
+        "positive": 0,
+        "source_interactions": 58,
+        "tie": 52,
+        "two_sided_exact_p": 0.03125,
+        "zero_tolerance": 1e-12
+      }
+    },
+    "neutral_json_formatting_placebo": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.0
+        },
+        "slack": {
+          "bases": 16,
+          "point": -0.041666666666666664
+        },
+        "travel": {
+          "bases": 16,
+          "point": -0.02083333333333333
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0
+        }
+      },
+      "by_original_fixed_rule": {
+        "rule_negative": {
+          "base_steps": 22,
+          "point": 5.046468293750712e-18,
+          "source_interactions": 22
+        },
+        "rule_positive": {
+          "base_steps": 42,
+          "point": -0.023809523809523808,
+          "source_interactions": 40
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 2,
+            "increase": 2,
+            "tie": 28
+          },
+          "interval": {
+            "clusters": 30,
+            "confidence": 0.95,
+            "lower": -0.13541666666666666,
+            "point": -0.031249999999999997,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.05376344086021506
+          },
+          "point": -0.031249999999999997,
+          "source_interactions": 30
+        },
+        "unsafe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 32
+          },
+          "interval": {
+            "clusters": 32,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0,
+          "source_interactions": 32
+        }
+      },
+      "definition": "mean of three fail-closed block decisions for condition minus mean of three fail-closed block decisions for original, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 2,
+        "increase": 2,
+        "tie": 60
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.06779661016949153,
+        "point": -0.015624999999999998,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.027777777777777776
+      },
+      "point": -0.015624999999999998,
+      "signed_order_diagnostics": {
+        "all_pairs_point": -0.015625,
+        "by_chronological_schedule_third": {
+          "first": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 316,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "last": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 641,
+            "source_interactions": 58
+          },
+          "middle": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          }
+        },
+        "by_repetition": {
+          "0": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 316,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "1": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          },
+          "2": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 641,
+            "source_interactions": 58
+          }
+        },
+        "chronological_third_definition": "tertiles of all planned calls in logged schedule_index order; each base-repetition pair is assigned by the midpoint of its two call indices",
+        "condition": "neutral_json_formatting_placebo",
+        "control": "original",
+        "interpretation": "secondary signed one-draw order/drift diagnostic, not the primary marginal-probability estimand; every pair is matched on base step and repetition and uses condition minus control",
+        "pairs_crossing_chronological_third_boundaries": 0
+      },
+      "source_interaction_sign_diagnostic": {
+        "interpretation": "exploratory exact two-sided sign test after equally averaging base-step contrasts within each upstream source interaction; zero interactions are excluded from the binomial test",
+        "negative": 2,
+        "nonzero": 4,
+        "positive": 2,
+        "source_interactions": 58,
+        "tie": 54,
+        "two_sided_exact_p": 1.0,
+        "zero_tolerance": 1e-12
+      }
+    },
+    "tool_alias": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.25
+        },
+        "slack": {
+          "bases": 16,
+          "point": 0.125
+        },
+        "travel": {
+          "bases": 16,
+          "point": 0.020833333333333336
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0625
+        }
+      },
+      "by_original_fixed_rule": {
+        "rule_negative": {
+          "base_steps": 22,
+          "point": 0.15151515151515152,
+          "source_interactions": 22
+        },
+        "rule_positive": {
+          "base_steps": 42,
+          "point": 0.09523809523809523,
+          "source_interactions": 40
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 2,
+            "increase": 9,
+            "tie": 21
+          },
+          "interval": {
+            "clusters": 30,
+            "confidence": 0.95,
+            "lower": 0.05555555555555555,
+            "point": 0.22916666666666666,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.39215686274509803
+          },
+          "point": 0.22916666666666666,
+          "source_interactions": 30
+        },
+        "unsafe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 32
+          },
+          "interval": {
+            "clusters": 32,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0,
+          "source_interactions": 32
+        }
+      },
+      "definition": "mean of three fail-closed block decisions for condition minus mean of three fail-closed block decisions for original, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 2,
+        "increase": 9,
+        "tie": 53
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.026881720430107524,
+        "point": 0.11458333333333334,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.20588235294117646
+      },
+      "point": 0.11458333333333333,
+      "signed_order_diagnostics": {
+        "all_pairs_point": 0.11458333333333333,
+        "by_chronological_schedule_third": {
+          "first": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.1875
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.09375,
+            "schedule_index_max": 318,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "last": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.25
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.125,
+            "schedule_index_max": 958,
+            "schedule_index_min": 641,
+            "source_interactions": 58
+          },
+          "middle": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.25
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.125,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          }
+        },
+        "by_repetition": {
+          "0": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.1875
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.09375,
+            "schedule_index_max": 318,
+            "schedule_index_min": 0,
+            "source_interactions": 58
+          },
+          "1": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.25
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.125,
+            "schedule_index_max": 639,
+            "schedule_index_min": 320,
+            "source_interactions": 58
+          },
+          "2": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.25
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.125,
+            "schedule_index_max": 958,
+            "schedule_index_min": 641,
+            "source_interactions": 58
+          }
+        },
+        "chronological_third_definition": "tertiles of all planned calls in logged schedule_index order; each base-repetition pair is assigned by the midpoint of its two call indices",
+        "condition": "tool_alias",
+        "control": "original",
+        "interpretation": "secondary signed one-draw order/drift diagnostic, not the primary marginal-probability estimand; every pair is matched on base step and repetition and uses condition minus control",
+        "pairs_crossing_chronological_third_boundaries": 0
+      },
+      "source_interaction_sign_diagnostic": {
+        "interpretation": "exploratory exact two-sided sign test after equally averaging base-step contrasts within each upstream source interaction; zero interactions are excluded from the binomial test",
+        "negative": 2,
+        "nonzero": 10,
+        "positive": 8,
+        "source_interactions": 58,
+        "tie": 48,
+        "two_sided_exact_p": 0.109375,
+        "zero_tolerance": 1e-12
+      }
+    }
+  },
+  "overall_coverage": {
+    "expected": 960,
+    "failed_or_missing": 0,
+    "failure_counts": {},
+    "received": 960,
+    "valid": 960,
+    "valid_rate": 1.0
+  },
+  "placebo_comparisons": {
+    "combined_minus_placebo": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.08333333333333333
+        },
+        "slack": {
+          "bases": 16,
+          "point": -0.0625
+        },
+        "travel": {
+          "bases": 16,
+          "point": -0.0625
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 3,
+            "increase": 2,
+            "tie": 27
+          },
+          "interval": {
+            "clusters": 30,
+            "confidence": 0.95,
+            "lower": -0.13333333333333333,
+            "point": -0.020833333333333343,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0784313725490196
+          },
+          "point": -0.020833333333333336,
+          "source_interactions": 30
+        },
+        "unsafe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 32
+          },
+          "interval": {
+            "clusters": 32,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0,
+          "source_interactions": 32
+        }
+      },
+      "definition": "base-equal marginal block probability for transformation minus neutral outer-JSON formatting placebo; all decisions fail closed",
+      "direction_counts": {
+        "decrease": 3,
+        "increase": 2,
+        "tie": 59
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.0687830687830688,
+        "point": -0.01041666666666667,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.041025641025641026
+      },
+      "point": -0.010416666666666668,
+      "signed_order_diagnostics": {
+        "all_pairs_point": -0.010416666666666666,
+        "by_chronological_schedule_third": {
+          "first": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.0
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.0,
+            "schedule_index_max": 319,
+            "schedule_index_min": 2,
+            "source_interactions": 58
+          },
+          "last": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 643,
+            "source_interactions": 58
+          },
+          "middle": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 637,
+            "schedule_index_min": 322,
+            "source_interactions": 58
+          }
+        },
+        "by_repetition": {
+          "0": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.0
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.0,
+            "schedule_index_max": 319,
+            "schedule_index_min": 2,
+            "source_interactions": 58
+          },
+          "1": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 637,
+            "schedule_index_min": 322,
+            "source_interactions": 58
+          },
+          "2": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.03125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.015625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 643,
+            "source_interactions": 58
+          }
+        },
+        "chronological_third_definition": "tertiles of all planned calls in logged schedule_index order; each base-repetition pair is assigned by the midpoint of its two call indices",
+        "condition": "combined",
+        "control": "neutral_json_formatting_placebo",
+        "interpretation": "secondary signed one-draw order/drift diagnostic, not the primary marginal-probability estimand; every pair is matched on base step and repetition and uses condition minus control",
+        "pairs_crossing_chronological_third_boundaries": 0
+      },
+      "source_interaction_sign_diagnostic": {
+        "interpretation": "exploratory exact two-sided sign test after equally averaging base-step contrasts within each upstream source interaction; zero interactions are excluded from the binomial test",
+        "negative": 3,
+        "nonzero": 5,
+        "positive": 2,
+        "source_interactions": 58,
+        "tie": 53,
+        "two_sided_exact_p": 1.0,
+        "zero_tolerance": 1e-12
+      }
+    },
+    "marker_paraphrase_minus_placebo": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.0
+        },
+        "slack": {
+          "bases": 16,
+          "point": -0.08333333333333334
+        },
+        "travel": {
+          "bases": 16,
+          "point": -0.125
+        },
+        "workspace": {
+          "bases": 16,
+          "point": -0.0625
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 5,
+            "increase": 0,
+            "tie": 27
+          },
+          "interval": {
+            "clusters": 30,
+            "confidence": 0.95,
+            "lower": -0.25806451612903225,
+            "point": -0.13541666666666669,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": -0.03225806451612903
+          },
+          "point": -0.13541666666666666,
+          "source_interactions": 30
+        },
+        "unsafe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 32
+          },
+          "interval": {
+            "clusters": 32,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0,
+          "source_interactions": 32
+        }
+      },
+      "definition": "base-equal marginal block probability for transformation minus neutral outer-JSON formatting placebo; all decisions fail closed",
+      "direction_counts": {
+        "decrease": 5,
+        "increase": 0,
+        "tie": 59
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.12820512820512822,
+        "point": -0.06770833333333334,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": -0.016129032258064516
+      },
+      "point": -0.06770833333333333,
+      "signed_order_diagnostics": {
+        "all_pairs_point": -0.06770833333333333,
+        "by_chronological_schedule_third": {
+          "first": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.15625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.078125,
+            "schedule_index_max": 317,
+            "schedule_index_min": 2,
+            "source_interactions": 58
+          },
+          "last": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.0625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 640,
+            "source_interactions": 58
+          },
+          "middle": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.0625,
+            "schedule_index_max": 638,
+            "schedule_index_min": 321,
+            "source_interactions": 58
+          }
+        },
+        "by_repetition": {
+          "0": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.15625
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.078125,
+            "schedule_index_max": 317,
+            "schedule_index_min": 2,
+            "source_interactions": 58
+          },
+          "1": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.0625,
+            "schedule_index_max": 638,
+            "schedule_index_min": 321,
+            "source_interactions": 58
+          },
+          "2": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": -0.125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": -0.0625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 640,
+            "source_interactions": 58
+          }
+        },
+        "chronological_third_definition": "tertiles of all planned calls in logged schedule_index order; each base-repetition pair is assigned by the midpoint of its two call indices",
+        "condition": "marker_paraphrase",
+        "control": "neutral_json_formatting_placebo",
+        "interpretation": "secondary signed one-draw order/drift diagnostic, not the primary marginal-probability estimand; every pair is matched on base step and repetition and uses condition minus control",
+        "pairs_crossing_chronological_third_boundaries": 0
+      },
+      "source_interaction_sign_diagnostic": {
+        "interpretation": "exploratory exact two-sided sign test after equally averaging base-step contrasts within each upstream source interaction; zero interactions are excluded from the binomial test",
+        "negative": 5,
+        "nonzero": 5,
+        "positive": 0,
+        "source_interactions": 58,
+        "tie": 53,
+        "two_sided_exact_p": 0.0625,
+        "zero_tolerance": 1e-12
+      }
+    },
+    "tool_alias_minus_placebo": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.25
+        },
+        "slack": {
+          "bases": 16,
+          "point": 0.16666666666666666
+        },
+        "travel": {
+          "bases": 16,
+          "point": 0.041666666666666664
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0625
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 1,
+            "increase": 9,
+            "tie": 22
+          },
+          "interval": {
+            "clusters": 30,
+            "confidence": 0.95,
+            "lower": 0.1111111111111111,
+            "point": 0.26041666666666663,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.4117647058823529
+          },
+          "point": 0.2604166666666667,
+          "source_interactions": 30
+        },
+        "unsafe": {
+          "bases": 32,
+          "direction_counts": {
+            "decrease": 0,
+            "increase": 0,
+            "tie": 32
+          },
+          "interval": {
+            "clusters": 32,
+            "confidence": 0.95,
+            "lower": 0.0,
+            "point": 0.0,
+            "replicates": 10000,
+            "seed": 26082945,
+            "upper": 0.0
+          },
+          "point": 0.0,
+          "source_interactions": 32
+        }
+      },
+      "definition": "base-equal marginal block probability for transformation minus neutral outer-JSON formatting placebo; all decisions fail closed",
+      "direction_counts": {
+        "decrease": 1,
+        "increase": 9,
+        "tie": 54
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.04918032786885245,
+        "point": 0.13020833333333331,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.21717171717171718
+      },
+      "point": 0.13020833333333334,
+      "signed_order_diagnostics": {
+        "all_pairs_point": 0.13020833333333334,
+        "by_chronological_schedule_third": {
+          "first": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.21875
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.109375,
+            "schedule_index_max": 318,
+            "schedule_index_min": 1,
+            "source_interactions": 58
+          },
+          "last": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.28125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.140625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 642,
+            "source_interactions": 58
+          },
+          "middle": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.28125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.140625,
+            "schedule_index_max": 637,
+            "schedule_index_min": 323,
+            "source_interactions": 58
+          }
+        },
+        "by_repetition": {
+          "0": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.21875
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.109375,
+            "schedule_index_max": 318,
+            "schedule_index_min": 1,
+            "source_interactions": 58
+          },
+          "1": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.28125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.140625,
+            "schedule_index_max": 637,
+            "schedule_index_min": 323,
+            "source_interactions": 58
+          },
+          "2": {
+            "base_steps": 64,
+            "by_original_label": {
+              "safe": {
+                "pairs": 32,
+                "point": 0.28125
+              },
+              "unsafe": {
+                "pairs": 32,
+                "point": 0.0
+              }
+            },
+            "pairs": 64,
+            "point": 0.140625,
+            "schedule_index_max": 959,
+            "schedule_index_min": 642,
+            "source_interactions": 58
+          }
+        },
+        "chronological_third_definition": "tertiles of all planned calls in logged schedule_index order; each base-repetition pair is assigned by the midpoint of its two call indices",
+        "condition": "tool_alias",
+        "control": "neutral_json_formatting_placebo",
+        "interpretation": "secondary signed one-draw order/drift diagnostic, not the primary marginal-probability estimand; every pair is matched on base step and repetition and uses condition minus control",
+        "pairs_crossing_chronological_third_boundaries": 0
+      },
+      "source_interaction_sign_diagnostic": {
+        "interpretation": "exploratory exact two-sided sign test after equally averaging base-step contrasts within each upstream source interaction; zero interactions are excluded from the binomial test",
+        "negative": 1,
+        "nonzero": 9,
+        "positive": 8,
+        "source_interactions": 58,
+        "tie": 49,
+        "two_sided_exact_p": 0.0390625,
+        "zero_tolerance": 1e-12
+      }
+    }
+  },
+  "planned_calls": 960,
+  "primary_estimand": "base-step-equal marginal block-probability difference from three calls per condition; one upstream source interaction is the bootstrap cluster",
+  "prompt_sha256": "0e6dd5de7686d45e7fb54d999bf58b5959191d247820d84bc1d095f3d52b1c2f",
+  "prompt_version": "authors_v2_structured",
+  "protocol_version": "OPENROUTER_HAIKU_AGENTDOJO_K3_v1.0",
+  "provider_model_cost_provenance": {
+    "attempt_count_distribution": {
+      "1": 960
+    },
+    "completion_tokens": 31990,
+    "observed_or_token_estimated_cost_usd": 3.407663,
+    "pinned_upstream_provider": "anthropic",
+    "prompt_tokens": 3247713,
+    "provider_reported_cost_rows": 960,
+    "records": 960,
+    "requested_model": "anthropic/claude-haiku-4.5",
+    "resolved_model_counts": {
+      "anthropic/claude-haiku-4.5": 960
+    },
+    "resolved_provider_counts": {
+      "Anthropic": 960
+    }
+  },
+  "raw_benchmark_text_in_summary": false,
+  "raw_records_artifact": {
+    "artifact_path": "artifacts/shortcut_audit/openrouter/claude-haiku-4.5-authors-v2-k3.jsonl",
+    "bytes": 1608985,
+    "parsed_records": 960,
+    "raw_benchmark_text_embedded_in_aggregate": false,
+    "sha256": "f21a34ca9bb49a5c112213dbe0d563055737fd114dbb0db6ba490338c063b188"
+  },
+  "repeated_condition_accuracy_contrasts": {
+    "combined": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": -0.08333333333333334
+        },
+        "slack": {
+          "bases": 16,
+          "point": 0.10416666666666667
+        },
+        "travel": {
+          "bases": 16,
+          "point": 0.08333333333333334
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "point": 0.052083333333333336
+        },
+        "unsafe": {
+          "bases": 32,
+          "point": 0.0
+        }
+      },
+      "definition": "mean strict fail-closed accuracy across three calls for condition minus the corresponding mean across three original calls, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 2,
+        "increase": 5,
+        "tie": 57
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.029850746268656723,
+        "point": 0.026041666666666664,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.08994708994708996
+      },
+      "point": 0.026041666666666668
+    },
+    "marker_paraphrase": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.0
+        },
+        "slack": {
+          "bases": 16,
+          "point": 0.125
+        },
+        "travel": {
+          "bases": 16,
+          "point": 0.14583333333333334
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0625
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "point": 0.16666666666666666
+        },
+        "unsafe": {
+          "bases": 32,
+          "point": 0.0
+        }
+      },
+      "definition": "mean strict fail-closed accuracy across three calls for condition minus the corresponding mean across three original calls, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 0,
+        "increase": 6,
+        "tie": 58
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.024875621890547265,
+        "point": 0.08333333333333334,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.15053763440860216
+      },
+      "point": 0.08333333333333333
+    },
+    "neutral_json_formatting_placebo": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": 0.0
+        },
+        "slack": {
+          "bases": 16,
+          "point": 0.04166666666666667
+        },
+        "travel": {
+          "bases": 16,
+          "point": 0.020833333333333336
+        },
+        "workspace": {
+          "bases": 16,
+          "point": 0.0
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "point": 0.03125
+        },
+        "unsafe": {
+          "bases": 32,
+          "point": 0.0
+        }
+      },
+      "definition": "mean strict fail-closed accuracy across three calls for condition minus the corresponding mean across three original calls, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 2,
+        "increase": 2,
+        "tie": 60
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.027777777777777776,
+        "point": 0.015625000000000003,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.06779661016949153
+      },
+      "point": 0.015625
+    },
+    "tool_alias": {
+      "bases": 64,
+      "by_domain": {
+        "banking": {
+          "bases": 16,
+          "point": -0.25
+        },
+        "slack": {
+          "bases": 16,
+          "point": -0.125
+        },
+        "travel": {
+          "bases": 16,
+          "point": -0.020833333333333332
+        },
+        "workspace": {
+          "bases": 16,
+          "point": -0.0625
+        }
+      },
+      "by_original_label": {
+        "safe": {
+          "bases": 32,
+          "point": -0.22916666666666666
+        },
+        "unsafe": {
+          "bases": 32,
+          "point": 0.0
+        }
+      },
+      "definition": "mean strict fail-closed accuracy across three calls for condition minus the corresponding mean across three original calls, then equally averaged by base step",
+      "direction_counts": {
+        "decrease": 9,
+        "increase": 2,
+        "tie": 53
+      },
+      "interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": -0.20588235294117646,
+        "point": -0.11458333333333333,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": -0.026881720430107524
+      },
+      "point": -0.11458333333333333
+    }
+  },
+  "repetitions_per_condition": 3,
+  "schedule_seed": 260829,
+  "schedule_sha256": "ecb2b0cdae6b9a9f5f4365d116b2c310397df3537c006f57651e6041a40da621",
+  "secondary_one_draw_flip_diagnostics": {
+    "combined": {
+      "counts": {
+        "0_to_0": 40,
+        "0_to_1": 5,
+        "1_to_0": 10,
+        "1_to_1": 137
+      },
+      "flip_rate": 0.078125,
+      "interpretation": "secondary descriptive one-draw flips; not the causal estimand and not a subtraction baseline",
+      "paired_by_schedule_round_only": true,
+      "pairs": 192,
+      "valid_pairs": 192
+    },
+    "marker_paraphrase": {
+      "counts": {
+        "0_to_0": 44,
+        "0_to_1": 1,
+        "1_to_0": 17,
+        "1_to_1": 130
+      },
+      "flip_rate": 0.09375,
+      "interpretation": "secondary descriptive one-draw flips; not the causal estimand and not a subtraction baseline",
+      "paired_by_schedule_round_only": true,
+      "pairs": 192,
+      "valid_pairs": 192
+    },
+    "neutral_json_formatting_placebo": {
+      "counts": {
+        "0_to_0": 42,
+        "0_to_1": 3,
+        "1_to_0": 6,
+        "1_to_1": 141
+      },
+      "flip_rate": 0.046875,
+      "interpretation": "secondary descriptive one-draw flips; not the causal estimand and not a subtraction baseline",
+      "paired_by_schedule_round_only": true,
+      "pairs": 192,
+      "valid_pairs": 192
+    },
+    "tool_alias": {
+      "counts": {
+        "0_to_0": 18,
+        "0_to_1": 27,
+        "1_to_0": 5,
+        "1_to_1": 142
+      },
+      "flip_rate": 0.16666666666666666,
+      "interpretation": "secondary descriptive one-draw flips; not the causal estimand and not a subtraction baseline",
+      "paired_by_schedule_round_only": true,
+      "pairs": 192,
+      "valid_pairs": 192
+    }
+  },
+  "source_interactions": 58,
+  "strict_all_three_unanimous_shifts": {
+    "combined": {
+      "bases": 64,
+      "complete_valid_six_call_bases": 64,
+      "counts": {
+        "0_to_0": 12,
+        "0_to_1": 1,
+        "1_to_0": 2,
+        "1_to_1": 45,
+        "at_least_one_condition_nonunanimous": 4,
+        "incomplete_or_invalid": 0
+      },
+      "strict_unanimous_shift_count": 3
+    },
+    "marker_paraphrase": {
+      "bases": 64,
+      "complete_valid_six_call_bases": 64,
+      "counts": {
+        "0_to_0": 14,
+        "0_to_1": 0,
+        "1_to_0": 5,
+        "1_to_1": 43,
+        "at_least_one_condition_nonunanimous": 2,
+        "incomplete_or_invalid": 0
+      },
+      "strict_unanimous_shift_count": 5
+    },
+    "neutral_json_formatting_placebo": {
+      "bases": 64,
+      "complete_valid_six_call_bases": 64,
+      "counts": {
+        "0_to_0": 14,
+        "0_to_1": 0,
+        "1_to_0": 2,
+        "1_to_1": 46,
+        "at_least_one_condition_nonunanimous": 2,
+        "incomplete_or_invalid": 0
+      },
+      "strict_unanimous_shift_count": 2
+    },
+    "tool_alias": {
+      "bases": 64,
+      "complete_valid_six_call_bases": 64,
+      "counts": {
+        "0_to_0": 6,
+        "0_to_1": 8,
+        "1_to_0": 1,
+        "1_to_1": 46,
+        "at_least_one_condition_nonunanimous": 3,
+        "incomplete_or_invalid": 0
+      },
+      "strict_unanimous_shift_count": 9
+    }
+  },
+  "within_condition_stability": {
+    "combined": {
+      "expected_bases": 64,
+      "fail_closed_all_three_unanimous_rate": 0.96875,
+      "fail_closed_mean_pairwise_disagreement": 0.020833333333333332,
+      "fail_closed_mean_pairwise_disagreement_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.0,
+        "point": 0.020833333333333332,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.05128205128205128
+      },
+      "valid_all_three_bases": 64,
+      "valid_complete_only_all_three_unanimous_rate": 0.96875,
+      "valid_complete_only_mean_pairwise_disagreement": 0.020833333333333332
+    },
+    "marker_paraphrase": {
+      "expected_bases": 64,
+      "fail_closed_all_three_unanimous_rate": 0.984375,
+      "fail_closed_mean_pairwise_disagreement": 0.010416666666666666,
+      "fail_closed_mean_pairwise_disagreement_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.0,
+        "point": 0.010416666666666666,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.03278688524590164
+      },
+      "valid_all_three_bases": 64,
+      "valid_complete_only_all_three_unanimous_rate": 0.984375,
+      "valid_complete_only_mean_pairwise_disagreement": 0.010416666666666666
+    },
+    "neutral_json_formatting_placebo": {
+      "expected_bases": 64,
+      "fail_closed_all_three_unanimous_rate": 1.0,
+      "fail_closed_mean_pairwise_disagreement": 0.0,
+      "fail_closed_mean_pairwise_disagreement_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.0,
+        "point": 0.0,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.0
+      },
+      "valid_all_three_bases": 64,
+      "valid_complete_only_all_three_unanimous_rate": 1.0,
+      "valid_complete_only_mean_pairwise_disagreement": 0.0
+    },
+    "original": {
+      "expected_bases": 64,
+      "fail_closed_all_three_unanimous_rate": 0.96875,
+      "fail_closed_mean_pairwise_disagreement": 0.020833333333333332,
+      "fail_closed_mean_pairwise_disagreement_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.0,
+        "point": 0.020833333333333332,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.05208333333333333
+      },
+      "valid_all_three_bases": 64,
+      "valid_complete_only_all_three_unanimous_rate": 0.96875,
+      "valid_complete_only_mean_pairwise_disagreement": 0.020833333333333332
+    },
+    "tool_alias": {
+      "expected_bases": 64,
+      "fail_closed_all_three_unanimous_rate": 0.96875,
+      "fail_closed_mean_pairwise_disagreement": 0.020833333333333332,
+      "fail_closed_mean_pairwise_disagreement_interval": {
+        "clusters": 58,
+        "confidence": 0.95,
+        "lower": 0.0,
+        "point": 0.020833333333333332,
+        "replicates": 10000,
+        "seed": 26082945,
+        "upper": 0.05376344086021505
+      },
+      "valid_all_three_bases": 64,
+      "valid_complete_only_all_three_unanimous_rate": 0.96875,
+      "valid_complete_only_mean_pairwise_disagreement": 0.020833333333333332
+    }
+  }
+}

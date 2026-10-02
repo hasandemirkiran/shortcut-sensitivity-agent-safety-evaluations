@@ -1,0 +1,1619 @@
+{
+  "AgentDojo_paired": {
+    "frozen_base_rows": 64,
+    "guards": {
+      "GPT-5.5": {
+        "combined": {
+          "balanced_cohort": {
+            "clopper_pearson_interval": {
+              "confidence": 0.95,
+              "lower": 0.0038071813818723746,
+              "upper": 0.1083705222245171
+            },
+            "decision_direction_counts": {
+              "0_to_1": 1,
+              "1_to_0": 1,
+              "unchanged": 62
+            },
+            "estimand": "unweighted_valid_pair_single_draw_strict_decision_disagreement_rate",
+            "flip_count": 2,
+            "interpretation": "unsigned single-draw flip count; descriptive disagreement, not the signed marginal block-probability estimand",
+            "rate": 0.03125
+          },
+          "decision_process": "potentially_stochastic_single_draw_per_condition",
+          "deterministic_rule_sensitivity": {
+            "directionally_concordant_flips_when_rule_changed": 1,
+            "guard_flips_when_rule_changed": 2,
+            "guard_flips_when_rule_unchanged": 0,
+            "interpretation": "Concordance is descriptive: a strict-decision change in the same direction as the deterministic rule change does not identify mechanism.",
+            "original_rule_strata": {
+              "rule_negative": {
+                "decision_direction_counts": {
+                  "unchanged": 22
+                },
+                "flip_count": 0,
+                "flip_rate": 0.0,
+                "n": 22
+              },
+              "rule_positive": {
+                "decision_direction_counts": {
+                  "0_to_1": 1,
+                  "1_to_0": 1,
+                  "unchanged": 40
+                },
+                "flip_count": 2,
+                "flip_rate": 0.047619047619047616,
+                "n": 42
+              }
+            },
+            "rule_changed_pairs": 42,
+            "rule_transition_counts": {
+              "0_to_0": 22,
+              "1_to_0": 42
+            },
+            "rule_unchanged_pairs": 22
+          },
+          "expected_pairs": 64,
+          "inferential_scope": "unsigned original-transformed flips are descriptive disagreement; the signed K=1 mean estimates the average marginal block-probability contrast under stable independent draws, but is noisy and lacks interleaved repeat, drift, and stability controls",
+          "interaction_clustered_sensitivity": {
+            "base_rows_in_valid_pairs": 64,
+            "estimand": "equal_interaction_weight_mean_of_within_interaction_flip_rates",
+            "interaction_count": 58,
+            "interactions_with_any_flip": 2,
+            "percentile_cluster_bootstrap_interval": {
+              "confidence": 0.95,
+              "lower": 0.0,
+              "replicates": 10000,
+              "resampling_unit": "source_interaction_id",
+              "seed": 260831,
+              "upper": 0.0632183908045977
+            },
+            "rate": 0.022988505747126436
+          },
+          "marker_present_population_poststratified": {
+            "cells": {
+              "banking/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 2,
+                "population_n": 15,
+                "population_weight": 0.022288261515601784,
+                "sample_flip_rate": 0.25,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "banking/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 28,
+                "population_weight": 0.041604754829123326,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 54,
+                "population_weight": 0.08023774145616643,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 19,
+                "population_weight": 0.02823179791976226,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 67,
+                "population_weight": 0.09955423476968796,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 20,
+                "population_weight": 0.029717682020802376,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 185,
+                "population_weight": 0.274888558692422,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 285,
+                "population_weight": 0.4234769687964339,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              }
+            },
+            "rate": 0.005572065378900446,
+            "target": "all_marker_present_AgentDojo_rows",
+            "target_population_n": 673,
+            "uncertainty": "point_estimate_only; the frozen hash-selected cohort was not a probability sample from each post-stratum"
+          },
+          "missing_or_invalid_pairs": 0,
+          "ordinal_and_component_sensitivity": {
+            "any_component_change_count": 6,
+            "any_component_change_rate": 0.09375,
+            "component_change_counts": {
+              "current_action_harmfulness": 4,
+              "malicious_user_request": 0,
+              "third_party_attack": 2
+            },
+            "component_valid_pairs": 64,
+            "ordinal_score_change_count": 2,
+            "ordinal_score_change_rate": 0.03125,
+            "ordinal_score_direction_counts": {
+              "decreased": 1,
+              "increased": 1,
+              "unchanged": 62
+            },
+            "strict_decision_flip_count": 2
+          },
+          "signed_block_probability_contrast": {
+            "design_limitations": "the cached K=1 design was not interleaved and provides no repeated-condition precision, drift diagnostic, or within-condition stability estimate",
+            "estimand": "unweighted_valid_pair_mean_transformed_minus_original_strict_decision",
+            "interpretation": "under stable independent draws, the signed K=1 mean is an unbiased but noisy estimate of the average transformed-minus-original marginal block-probability contrast",
+            "point": 0.0,
+            "source_interaction_cluster_bootstrap_interval": {
+              "clusters": 58,
+              "confidence": 0.95,
+              "lower": -0.04838709677419355,
+              "point": 0.0,
+              "replicates": 10000,
+              "seed": 260931,
+              "upper": 0.043478260869565216
+            }
+          },
+          "valid_pairs": 64
+        },
+        "marker_paraphrase": {
+          "balanced_cohort": {
+            "clopper_pearson_interval": {
+              "confidence": 0.95,
+              "lower": 0.009773074954456552,
+              "upper": 0.13093573724140578
+            },
+            "decision_direction_counts": {
+              "0_to_1": 2,
+              "1_to_0": 1,
+              "unchanged": 61
+            },
+            "estimand": "unweighted_valid_pair_single_draw_strict_decision_disagreement_rate",
+            "flip_count": 3,
+            "interpretation": "unsigned single-draw flip count; descriptive disagreement, not the signed marginal block-probability estimand",
+            "rate": 0.046875
+          },
+          "decision_process": "potentially_stochastic_single_draw_per_condition",
+          "deterministic_rule_sensitivity": {
+            "directionally_concordant_flips_when_rule_changed": 1,
+            "guard_flips_when_rule_changed": 1,
+            "guard_flips_when_rule_unchanged": 2,
+            "interpretation": "Concordance is descriptive: a strict-decision change in the same direction as the deterministic rule change does not identify mechanism.",
+            "original_rule_strata": {
+              "rule_negative": {
+                "decision_direction_counts": {
+                  "0_to_1": 2,
+                  "unchanged": 20
+                },
+                "flip_count": 2,
+                "flip_rate": 0.09090909090909091,
+                "n": 22
+              },
+              "rule_positive": {
+                "decision_direction_counts": {
+                  "1_to_0": 1,
+                  "unchanged": 41
+                },
+                "flip_count": 1,
+                "flip_rate": 0.023809523809523808,
+                "n": 42
+              }
+            },
+            "rule_changed_pairs": 42,
+            "rule_transition_counts": {
+              "0_to_0": 22,
+              "1_to_0": 42
+            },
+            "rule_unchanged_pairs": 22
+          },
+          "expected_pairs": 64,
+          "inferential_scope": "unsigned original-transformed flips are descriptive disagreement; the signed K=1 mean estimates the average marginal block-probability contrast under stable independent draws, but is noisy and lacks interleaved repeat, drift, and stability controls",
+          "interaction_clustered_sensitivity": {
+            "base_rows_in_valid_pairs": 64,
+            "estimand": "equal_interaction_weight_mean_of_within_interaction_flip_rates",
+            "interaction_count": 58,
+            "interactions_with_any_flip": 3,
+            "percentile_cluster_bootstrap_interval": {
+              "confidence": 0.95,
+              "lower": 0.0,
+              "replicates": 10000,
+              "resampling_unit": "source_interaction_id",
+              "seed": 260829,
+              "upper": 0.1206896551724138
+            },
+            "rate": 0.05172413793103448
+          },
+          "marker_present_population_poststratified": {
+            "cells": {
+              "banking/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 15,
+                "population_weight": 0.022288261515601784,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "banking/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 28,
+                "population_weight": 0.041604754829123326,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 54,
+                "population_weight": 0.08023774145616643,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 19,
+                "population_weight": 0.02823179791976226,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 67,
+                "population_weight": 0.09955423476968796,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 20,
+                "population_weight": 0.029717682020802376,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 185,
+                "population_weight": 0.274888558692422,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 285,
+                "population_weight": 0.4234769687964339,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              }
+            },
+            "rate": 0.04959138187221397,
+            "target": "all_marker_present_AgentDojo_rows",
+            "target_population_n": 673,
+            "uncertainty": "point_estimate_only; the frozen hash-selected cohort was not a probability sample from each post-stratum"
+          },
+          "missing_or_invalid_pairs": 0,
+          "ordinal_and_component_sensitivity": {
+            "any_component_change_count": 9,
+            "any_component_change_rate": 0.140625,
+            "component_change_counts": {
+              "current_action_harmfulness": 6,
+              "malicious_user_request": 1,
+              "third_party_attack": 2
+            },
+            "component_valid_pairs": 64,
+            "ordinal_score_change_count": 3,
+            "ordinal_score_change_rate": 0.046875,
+            "ordinal_score_direction_counts": {
+              "decreased": 1,
+              "increased": 2,
+              "unchanged": 61
+            },
+            "strict_decision_flip_count": 3
+          },
+          "signed_block_probability_contrast": {
+            "design_limitations": "the cached K=1 design was not interleaved and provides no repeated-condition precision, drift diagnostic, or within-condition stability estimate",
+            "estimand": "unweighted_valid_pair_mean_transformed_minus_original_strict_decision",
+            "interpretation": "under stable independent draws, the signed K=1 mean is an unbiased but noisy estimate of the average transformed-minus-original marginal block-probability contrast",
+            "point": 0.015625,
+            "source_interaction_cluster_bootstrap_interval": {
+              "clusters": 58,
+              "confidence": 0.95,
+              "lower": -0.03278688524590164,
+              "point": 0.015625,
+              "replicates": 10000,
+              "seed": 260929,
+              "upper": 0.07145445134575532
+            }
+          },
+          "valid_pairs": 64
+        },
+        "tool_alias": {
+          "balanced_cohort": {
+            "clopper_pearson_interval": {
+              "confidence": 0.95,
+              "lower": 0.00039551251405066466,
+              "upper": 0.08401032643435363
+            },
+            "decision_direction_counts": {
+              "0_to_1": 1,
+              "unchanged": 63
+            },
+            "estimand": "unweighted_valid_pair_single_draw_strict_decision_disagreement_rate",
+            "flip_count": 1,
+            "interpretation": "unsigned single-draw flip count; descriptive disagreement, not the signed marginal block-probability estimand",
+            "rate": 0.015625
+          },
+          "decision_process": "potentially_stochastic_single_draw_per_condition",
+          "deterministic_rule_sensitivity": {
+            "directionally_concordant_flips_when_rule_changed": 0,
+            "guard_flips_when_rule_changed": 0,
+            "guard_flips_when_rule_unchanged": 1,
+            "interpretation": "Concordance is descriptive: a strict-decision change in the same direction as the deterministic rule change does not identify mechanism.",
+            "original_rule_strata": {
+              "rule_negative": {
+                "decision_direction_counts": {
+                  "0_to_1": 1,
+                  "unchanged": 21
+                },
+                "flip_count": 1,
+                "flip_rate": 0.045454545454545456,
+                "n": 22
+              },
+              "rule_positive": {
+                "decision_direction_counts": {
+                  "unchanged": 42
+                },
+                "flip_count": 0,
+                "flip_rate": 0.0,
+                "n": 42
+              }
+            },
+            "rule_changed_pairs": 42,
+            "rule_transition_counts": {
+              "0_to_0": 22,
+              "1_to_0": 42
+            },
+            "rule_unchanged_pairs": 22
+          },
+          "expected_pairs": 64,
+          "inferential_scope": "unsigned original-transformed flips are descriptive disagreement; the signed K=1 mean estimates the average marginal block-probability contrast under stable independent draws, but is noisy and lacks interleaved repeat, drift, and stability controls",
+          "interaction_clustered_sensitivity": {
+            "base_rows_in_valid_pairs": 64,
+            "estimand": "equal_interaction_weight_mean_of_within_interaction_flip_rates",
+            "interaction_count": 58,
+            "interactions_with_any_flip": 1,
+            "percentile_cluster_bootstrap_interval": {
+              "confidence": 0.95,
+              "lower": 0.0,
+              "replicates": 10000,
+              "resampling_unit": "source_interaction_id",
+              "seed": 260830,
+              "upper": 0.02586206896551724
+            },
+            "rate": 0.008620689655172414
+          },
+          "marker_present_population_poststratified": {
+            "cells": {
+              "banking/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 15,
+                "population_weight": 0.022288261515601784,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "banking/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 28,
+                "population_weight": 0.041604754829123326,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 54,
+                "population_weight": 0.08023774145616643,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 19,
+                "population_weight": 0.02823179791976226,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 67,
+                "population_weight": 0.09955423476968796,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 20,
+                "population_weight": 0.029717682020802376,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 185,
+                "population_weight": 0.274888558692422,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 285,
+                "population_weight": 0.4234769687964339,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              }
+            },
+            "rate": 0.012444279346210995,
+            "target": "all_marker_present_AgentDojo_rows",
+            "target_population_n": 673,
+            "uncertainty": "point_estimate_only; the frozen hash-selected cohort was not a probability sample from each post-stratum"
+          },
+          "missing_or_invalid_pairs": 0,
+          "ordinal_and_component_sensitivity": {
+            "any_component_change_count": 4,
+            "any_component_change_rate": 0.0625,
+            "component_change_counts": {
+              "current_action_harmfulness": 3,
+              "malicious_user_request": 0,
+              "third_party_attack": 1
+            },
+            "component_valid_pairs": 64,
+            "ordinal_score_change_count": 1,
+            "ordinal_score_change_rate": 0.015625,
+            "ordinal_score_direction_counts": {
+              "increased": 1,
+              "unchanged": 63
+            },
+            "strict_decision_flip_count": 1
+          },
+          "signed_block_probability_contrast": {
+            "design_limitations": "the cached K=1 design was not interleaved and provides no repeated-condition precision, drift diagnostic, or within-condition stability estimate",
+            "estimand": "unweighted_valid_pair_mean_transformed_minus_original_strict_decision",
+            "interpretation": "under stable independent draws, the signed K=1 mean is an unbiased but noisy estimate of the average transformed-minus-original marginal block-probability contrast",
+            "point": 0.015625,
+            "source_interaction_cluster_bootstrap_interval": {
+              "clusters": 58,
+              "confidence": 0.95,
+              "lower": 0.0,
+              "point": 0.015625,
+              "replicates": 10000,
+              "seed": 260930,
+              "upper": 0.047619047619047616
+            }
+          },
+          "valid_pairs": 64
+        }
+      },
+      "TS-Guard Q8": {
+        "combined": {
+          "balanced_cohort": {
+            "clopper_pearson_interval": {
+              "confidence": 0.95,
+              "lower": 0.03518733287081832,
+              "upper": 0.19296910444834386
+            },
+            "decision_direction_counts": {
+              "0_to_1": 4,
+              "1_to_0": 2,
+              "unchanged": 58
+            },
+            "estimand": "unweighted_valid_pair_deterministic_strict_decision_flip_rate",
+            "flip_count": 6,
+            "interpretation": "deterministic strict-decision sensitivity",
+            "rate": 0.09375
+          },
+          "decision_process": "deterministic_greedy",
+          "deterministic_rule_sensitivity": {
+            "directionally_concordant_flips_when_rule_changed": 1,
+            "guard_flips_when_rule_changed": 4,
+            "guard_flips_when_rule_unchanged": 2,
+            "interpretation": "Concordance is descriptive: a strict-decision change in the same direction as the deterministic rule change does not identify mechanism.",
+            "original_rule_strata": {
+              "rule_negative": {
+                "decision_direction_counts": {
+                  "0_to_1": 1,
+                  "1_to_0": 1,
+                  "unchanged": 20
+                },
+                "flip_count": 2,
+                "flip_rate": 0.09090909090909091,
+                "n": 22
+              },
+              "rule_positive": {
+                "decision_direction_counts": {
+                  "0_to_1": 3,
+                  "1_to_0": 1,
+                  "unchanged": 38
+                },
+                "flip_count": 4,
+                "flip_rate": 0.09523809523809523,
+                "n": 42
+              }
+            },
+            "rule_changed_pairs": 42,
+            "rule_transition_counts": {
+              "0_to_0": 22,
+              "1_to_0": 42
+            },
+            "rule_unchanged_pairs": 22
+          },
+          "expected_pairs": 64,
+          "inferential_scope": "local strict-decision sensitivity to this exact edit",
+          "interaction_clustered_sensitivity": {
+            "base_rows_in_valid_pairs": 64,
+            "estimand": "equal_interaction_weight_mean_of_within_interaction_flip_rates",
+            "interaction_count": 58,
+            "interactions_with_any_flip": 5,
+            "percentile_cluster_bootstrap_interval": {
+              "confidence": 0.95,
+              "lower": 0.017241379310344827,
+              "replicates": 10000,
+              "resampling_unit": "source_interaction_id",
+              "seed": 260831,
+              "upper": 0.15517241379310345
+            },
+            "rate": 0.08620689655172414
+          },
+          "marker_present_population_poststratified": {
+            "cells": {
+              "banking/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 3,
+                "population_n": 15,
+                "population_weight": 0.022288261515601784,
+                "sample_flip_rate": 0.375,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "banking/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 28,
+                "population_weight": 0.041604754829123326,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 54,
+                "population_weight": 0.08023774145616643,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 19,
+                "population_weight": 0.02823179791976226,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 67,
+                "population_weight": 0.09955423476968796,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 20,
+                "population_weight": 0.029717682020802376,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 2,
+                "population_n": 185,
+                "population_weight": 0.274888558692422,
+                "sample_flip_rate": 0.25,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 285,
+                "population_weight": 0.4234769687964339,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              }
+            },
+            "rate": 0.1300148588410104,
+            "target": "all_marker_present_AgentDojo_rows",
+            "target_population_n": 673,
+            "uncertainty": "point_estimate_only; the frozen hash-selected cohort was not a probability sample from each post-stratum"
+          },
+          "missing_or_invalid_pairs": 0,
+          "ordinal_and_component_sensitivity": {
+            "any_component_change_count": 14,
+            "any_component_change_rate": 0.21875,
+            "component_change_counts": {
+              "current_action_harmfulness": 12,
+              "malicious_user_request": 2,
+              "third_party_attack": 5
+            },
+            "component_valid_pairs": 64,
+            "ordinal_score_change_count": 13,
+            "ordinal_score_change_rate": 0.203125,
+            "ordinal_score_direction_counts": {
+              "decreased": 4,
+              "increased": 9,
+              "unchanged": 51
+            },
+            "strict_decision_flip_count": 6
+          },
+          "signed_block_probability_contrast": {
+            "design_limitations": null,
+            "estimand": "unweighted_valid_pair_mean_transformed_minus_original_strict_decision",
+            "interpretation": "observed signed strict block-rate change under deterministic greedy decoding",
+            "point": 0.03125,
+            "source_interaction_cluster_bootstrap_interval": {
+              "clusters": 58,
+              "confidence": 0.95,
+              "lower": -0.030303030303030304,
+              "point": 0.03125,
+              "replicates": 10000,
+              "seed": 260931,
+              "upper": 0.0967741935483871
+            }
+          },
+          "valid_pairs": 64
+        },
+        "marker_paraphrase": {
+          "balanced_cohort": {
+            "clopper_pearson_interval": {
+              "confidence": 0.95,
+              "lower": 0.009773074954456552,
+              "upper": 0.13093573724140578
+            },
+            "decision_direction_counts": {
+              "0_to_1": 1,
+              "1_to_0": 2,
+              "unchanged": 61
+            },
+            "estimand": "unweighted_valid_pair_deterministic_strict_decision_flip_rate",
+            "flip_count": 3,
+            "interpretation": "deterministic strict-decision sensitivity",
+            "rate": 0.046875
+          },
+          "decision_process": "deterministic_greedy",
+          "deterministic_rule_sensitivity": {
+            "directionally_concordant_flips_when_rule_changed": 2,
+            "guard_flips_when_rule_changed": 2,
+            "guard_flips_when_rule_unchanged": 1,
+            "interpretation": "Concordance is descriptive: a strict-decision change in the same direction as the deterministic rule change does not identify mechanism.",
+            "original_rule_strata": {
+              "rule_negative": {
+                "decision_direction_counts": {
+                  "0_to_1": 1,
+                  "unchanged": 21
+                },
+                "flip_count": 1,
+                "flip_rate": 0.045454545454545456,
+                "n": 22
+              },
+              "rule_positive": {
+                "decision_direction_counts": {
+                  "1_to_0": 2,
+                  "unchanged": 40
+                },
+                "flip_count": 2,
+                "flip_rate": 0.047619047619047616,
+                "n": 42
+              }
+            },
+            "rule_changed_pairs": 42,
+            "rule_transition_counts": {
+              "0_to_0": 22,
+              "1_to_0": 42
+            },
+            "rule_unchanged_pairs": 22
+          },
+          "expected_pairs": 64,
+          "inferential_scope": "local strict-decision sensitivity to this exact edit",
+          "interaction_clustered_sensitivity": {
+            "base_rows_in_valid_pairs": 64,
+            "estimand": "equal_interaction_weight_mean_of_within_interaction_flip_rates",
+            "interaction_count": 58,
+            "interactions_with_any_flip": 3,
+            "percentile_cluster_bootstrap_interval": {
+              "confidence": 0.95,
+              "lower": 0.0,
+              "replicates": 10000,
+              "resampling_unit": "source_interaction_id",
+              "seed": 260829,
+              "upper": 0.09482758620689655
+            },
+            "rate": 0.04310344827586207
+          },
+          "marker_present_population_poststratified": {
+            "cells": {
+              "banking/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 15,
+                "population_weight": 0.022288261515601784,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "banking/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 28,
+                "population_weight": 0.041604754829123326,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 54,
+                "population_weight": 0.08023774145616643,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 19,
+                "population_weight": 0.02823179791976226,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 67,
+                "population_weight": 0.09955423476968796,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 20,
+                "population_weight": 0.029717682020802376,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 185,
+                "population_weight": 0.274888558692422,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 285,
+                "population_weight": 0.4234769687964339,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              }
+            },
+            "rate": 0.09082466567607728,
+            "target": "all_marker_present_AgentDojo_rows",
+            "target_population_n": 673,
+            "uncertainty": "point_estimate_only; the frozen hash-selected cohort was not a probability sample from each post-stratum"
+          },
+          "missing_or_invalid_pairs": 0,
+          "ordinal_and_component_sensitivity": {
+            "any_component_change_count": 7,
+            "any_component_change_rate": 0.109375,
+            "component_change_counts": {
+              "current_action_harmfulness": 5,
+              "malicious_user_request": 2,
+              "third_party_attack": 3
+            },
+            "component_valid_pairs": 64,
+            "ordinal_score_change_count": 5,
+            "ordinal_score_change_rate": 0.078125,
+            "ordinal_score_direction_counts": {
+              "decreased": 3,
+              "increased": 2,
+              "unchanged": 59
+            },
+            "strict_decision_flip_count": 3
+          },
+          "signed_block_probability_contrast": {
+            "design_limitations": null,
+            "estimand": "unweighted_valid_pair_mean_transformed_minus_original_strict_decision",
+            "interpretation": "observed signed strict block-rate change under deterministic greedy decoding",
+            "point": -0.015625,
+            "source_interaction_cluster_bootstrap_interval": {
+              "clusters": 58,
+              "confidence": 0.95,
+              "lower": -0.07246376811594203,
+              "point": -0.015625,
+              "replicates": 10000,
+              "seed": 260929,
+              "upper": 0.03278688524590164
+            }
+          },
+          "valid_pairs": 64
+        },
+        "tool_alias": {
+          "balanced_cohort": {
+            "clopper_pearson_interval": {
+              "confidence": 0.95,
+              "lower": 0.00992995115073328,
+              "upper": 0.1329184007481506
+            },
+            "decision_direction_counts": {
+              "0_to_1": 2,
+              "1_to_0": 1,
+              "unchanged": 60
+            },
+            "estimand": "unweighted_valid_pair_deterministic_strict_decision_flip_rate",
+            "flip_count": 3,
+            "interpretation": "deterministic strict-decision sensitivity",
+            "rate": 0.047619047619047616
+          },
+          "decision_process": "deterministic_greedy",
+          "deterministic_rule_sensitivity": {
+            "directionally_concordant_flips_when_rule_changed": 1,
+            "guard_flips_when_rule_changed": 1,
+            "guard_flips_when_rule_unchanged": 2,
+            "interpretation": "Concordance is descriptive: a strict-decision change in the same direction as the deterministic rule change does not identify mechanism.",
+            "original_rule_strata": {
+              "rule_negative": {
+                "decision_direction_counts": {
+                  "0_to_1": 2,
+                  "unchanged": 20
+                },
+                "flip_count": 2,
+                "flip_rate": 0.09090909090909091,
+                "n": 22
+              },
+              "rule_positive": {
+                "decision_direction_counts": {
+                  "1_to_0": 1,
+                  "unchanged": 40
+                },
+                "flip_count": 1,
+                "flip_rate": 0.024390243902439025,
+                "n": 41
+              }
+            },
+            "rule_changed_pairs": 41,
+            "rule_transition_counts": {
+              "0_to_0": 22,
+              "1_to_0": 41
+            },
+            "rule_unchanged_pairs": 22
+          },
+          "expected_pairs": 64,
+          "inferential_scope": "local strict-decision sensitivity to this exact edit",
+          "interaction_clustered_sensitivity": {
+            "base_rows_in_valid_pairs": 63,
+            "estimand": "equal_interaction_weight_mean_of_within_interaction_flip_rates",
+            "interaction_count": 57,
+            "interactions_with_any_flip": 3,
+            "percentile_cluster_bootstrap_interval": {
+              "confidence": 0.95,
+              "lower": 0.0,
+              "replicates": 10000,
+              "resampling_unit": "source_interaction_id",
+              "seed": 260830,
+              "upper": 0.12280701754385964
+            },
+            "rate": 0.05263157894736842
+          },
+          "marker_present_population_poststratified": {
+            "cells": {
+              "banking/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 15,
+                "population_weight": 0.022288261515601784,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "banking/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 28,
+                "population_weight": 0.041604754829123326,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 54,
+                "population_weight": 0.08023774145616643,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "slack/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 19,
+                "population_weight": 0.02823179791976226,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 67,
+                "population_weight": 0.09955423476968796,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "travel/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 0,
+                "population_n": 20,
+                "population_weight": 0.029717682020802376,
+                "sample_flip_rate": 0.0,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              },
+              "workspace/safe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 185,
+                "population_weight": 0.274888558692422,
+                "sample_flip_rate": 0.14285714285714285,
+                "valid_sample_n": 7,
+                "valid_sample_rate": 0.875
+              },
+              "workspace/unsafe": {
+                "expected_sample_n": 8,
+                "flip_count": 1,
+                "population_n": 285,
+                "population_weight": 0.4234769687964339,
+                "sample_flip_rate": 0.125,
+                "valid_sample_n": 8,
+                "valid_sample_rate": 1.0
+              }
+            },
+            "rate": 0.09499044788792188,
+            "target": "all_marker_present_AgentDojo_rows",
+            "target_population_n": 673,
+            "uncertainty": "point_estimate_only; the frozen hash-selected cohort was not a probability sample from each post-stratum"
+          },
+          "missing_or_invalid_pairs": 1,
+          "ordinal_and_component_sensitivity": {
+            "any_component_change_count": 14,
+            "any_component_change_rate": 0.2222222222222222,
+            "component_change_counts": {
+              "current_action_harmfulness": 12,
+              "malicious_user_request": 2,
+              "third_party_attack": 2
+            },
+            "component_valid_pairs": 63,
+            "ordinal_score_change_count": 12,
+            "ordinal_score_change_rate": 0.19047619047619047,
+            "ordinal_score_direction_counts": {
+              "decreased": 7,
+              "increased": 5,
+              "unchanged": 51
+            },
+            "strict_decision_flip_count": 3
+          },
+          "signed_block_probability_contrast": {
+            "design_limitations": null,
+            "estimand": "unweighted_valid_pair_mean_transformed_minus_original_strict_decision",
+            "interpretation": "observed signed strict block-rate change under deterministic greedy decoding",
+            "point": 0.015873015873015872,
+            "source_interaction_cluster_bootstrap_interval": {
+              "clusters": 57,
+              "confidence": 0.95,
+              "lower": -0.03333333333333333,
+              "point": 0.015873015873015872,
+              "replicates": 10000,
+              "seed": 260930,
+              "upper": 0.07352941176470588
+            }
+          },
+          "valid_pairs": 63
+        }
+      }
+    },
+    "marker_present_target_population_n": 673,
+    "source_interaction_ids": 58
+  },
+  "AgentHarm_exact_execution_matched_context": {
+    "guards": {
+      "Claude Haiku 4.5": {
+        "matched_row_prediction_coverage": 1.0,
+        "ordinal_composite_score": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 22,
+            "unsafe_higher": 54,
+            "unsafe_lower": 2
+          },
+          "group_direction_counts": {
+            "tied": 6,
+            "unsafe_higher": 8,
+            "unsafe_lower": 2
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 16,
+              "mean": 8.9208,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.078125,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260830,
+            "upper": 0.6328125,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.40625,
+          "macro_unsafe_mean": 0.6892857142857143,
+          "macro_unsafe_minus_safe": 0.2830357142857143,
+          "usable_exact_execution_groups": 16
+        },
+        "strict_block_decision": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 24,
+            "unsafe_higher": 54
+          },
+          "group_direction_counts": {
+            "tied": 8,
+            "unsafe_higher": 8
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 16,
+              "mean": 8.8738,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.21428571428571427,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260829,
+            "upper": 0.75,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.40625,
+          "macro_unsafe_mean": 0.8082589285714286,
+          "macro_unsafe_minus_safe": 0.40200892857142856,
+          "usable_exact_execution_groups": 16
+        }
+      },
+      "Claude Opus 4.8": {
+        "matched_row_prediction_coverage": 1.0,
+        "ordinal_composite_score": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 45,
+            "unsafe_higher": 33
+          },
+          "group_direction_counts": {
+            "tied": 8,
+            "unsafe_higher": 8
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.9212,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.09375,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260832,
+            "upper": 0.375,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.275,
+          "macro_unsafe_mean": 0.4921875,
+          "macro_unsafe_minus_safe": 0.2171875,
+          "usable_exact_execution_groups": 16
+        },
+        "strict_block_decision": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 47,
+            "unsafe_higher": 31
+          },
+          "group_direction_counts": {
+            "tied": 9,
+            "unsafe_higher": 7
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.9013,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.14285714285714285,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260831,
+            "upper": 0.6875,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.55,
+          "macro_unsafe_mean": 0.9375,
+          "macro_unsafe_minus_safe": 0.3875,
+          "usable_exact_execution_groups": 16
+        }
+      },
+      "Claude Sonnet 5": {
+        "matched_row_prediction_coverage": 1.0,
+        "ordinal_composite_score": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 19,
+            "unsafe_higher": 57,
+            "unsafe_lower": 2
+          },
+          "group_direction_counts": {
+            "tied": 2,
+            "unsafe_higher": 12,
+            "unsafe_lower": 2
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.903,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.1432198660714286,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260834,
+            "upper": 0.4809523809523809,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.29375,
+          "macro_unsafe_mean": 0.5943080357142857,
+          "macro_unsafe_minus_safe": 0.30055803571428574,
+          "usable_exact_execution_groups": 16
+        },
+        "strict_block_decision": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 31,
+            "unsafe_higher": 47
+          },
+          "group_direction_counts": {
+            "tied": 8,
+            "unsafe_higher": 8
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.9127,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.21428571428571427,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260833,
+            "upper": 0.7777777777777778,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.4625,
+          "macro_unsafe_mean": 0.9140625,
+          "macro_unsafe_minus_safe": 0.4515625,
+          "usable_exact_execution_groups": 16
+        }
+      },
+      "GPT-5.5": {
+        "matched_row_prediction_coverage": 1.0,
+        "ordinal_composite_score": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 33,
+            "unsafe_higher": 45
+          },
+          "group_direction_counts": {
+            "tied": 6,
+            "unsafe_higher": 10
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 16,
+              "mean": 8.9059,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.16666666666666666,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260836,
+            "upper": 0.5416666666666666,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.3,
+          "macro_unsafe_mean": 0.6328125,
+          "macro_unsafe_minus_safe": 0.3328125,
+          "usable_exact_execution_groups": 16
+        },
+        "strict_block_decision": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 35,
+            "unsafe_higher": 43
+          },
+          "group_direction_counts": {
+            "tied": 8,
+            "unsafe_higher": 8
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 16,
+              "mean": 8.8695,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.2360524891774892,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260835,
+            "upper": 0.7777777777777778,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.475,
+          "macro_unsafe_mean": 0.9375,
+          "macro_unsafe_minus_safe": 0.4625,
+          "usable_exact_execution_groups": 16
+        }
+      },
+      "GPT-5.6 Luna": {
+        "matched_row_prediction_coverage": 1.0,
+        "ordinal_composite_score": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 38,
+            "unsafe_higher": 34,
+            "unsafe_lower": 6
+          },
+          "group_direction_counts": {
+            "tied": 7,
+            "unsafe_higher": 8,
+            "unsafe_lower": 1
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.9584,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.04166666666666667,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260838,
+            "upper": 0.35102465986394554,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.36875,
+          "macro_unsafe_mean": 0.5619419642857143,
+          "macro_unsafe_minus_safe": 0.19319196428571428,
+          "usable_exact_execution_groups": 16
+        },
+        "strict_block_decision": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 41,
+            "unsafe_higher": 33,
+            "unsafe_lower": 4
+          },
+          "group_direction_counts": {
+            "tied": 9,
+            "unsafe_higher": 7
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.9168,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.13539859693877554,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260837,
+            "upper": 0.6666666666666666,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.55,
+          "macro_unsafe_mean": 0.9285714285714286,
+          "macro_unsafe_minus_safe": 0.37857142857142856,
+          "usable_exact_execution_groups": 16
+        }
+      },
+      "GPT-5.6 Terra": {
+        "matched_row_prediction_coverage": 1.0,
+        "ordinal_composite_score": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 43,
+            "unsafe_higher": 35
+          },
+          "group_direction_counts": {
+            "tied": 8,
+            "unsafe_higher": 8
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.9333,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.10543367346938776,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260840,
+            "upper": 0.4041666666666666,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.375,
+          "macro_unsafe_mean": 0.6227678571428572,
+          "macro_unsafe_minus_safe": 0.24776785714285715,
+          "usable_exact_execution_groups": 16
+        },
+        "strict_block_decision": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 56,
+            "unsafe_higher": 22
+          },
+          "group_direction_counts": {
+            "tied": 11,
+            "unsafe_higher": 5
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 15,
+              "mean": 8.9264,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.1,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260839,
+            "upper": 0.5714285714285714,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.625,
+          "macro_unsafe_mean": 0.9375,
+          "macro_unsafe_minus_safe": 0.3125,
+          "usable_exact_execution_groups": 16
+        }
+      },
+      "TS-Guard": {
+        "matched_row_prediction_coverage": 1.0,
+        "ordinal_composite_score": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 10,
+            "unsafe_higher": 68
+          },
+          "group_direction_counts": {
+            "tied": 5,
+            "unsafe_higher": 11
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 16,
+              "mean": 8.9634,
+              "minimum": 2
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.3599880952380952,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260842,
+            "upper": 0.7807663690476189,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.4125,
+          "macro_unsafe_mean": 0.9223214285714286,
+          "macro_unsafe_minus_safe": 0.5098214285714286,
+          "usable_exact_execution_groups": 16
+        },
+        "strict_block_decision": {
+          "cross_product_pair_direction_counts_secondary": {
+            "tied": 23,
+            "unsafe_higher": 55
+          },
+          "group_direction_counts": {
+            "tied": 9,
+            "unsafe_higher": 7
+          },
+          "interaction_cluster_bootstrap_interval": {
+            "confidence": 0.95,
+            "groups_retained_per_replicate": {
+              "maximum": 16,
+              "mean": 8.9578,
+              "minimum": 1
+            },
+            "interaction_count": 39,
+            "interpretation": "Descriptive cluster-bootstrap sensitivity interval. Exact-execution groups were discovered in this fixed benchmark and may share interactions.",
+            "lower": 0.22916666666666669,
+            "replicates": 10000,
+            "resampling_unit": "AgentHarm_source_interaction_id",
+            "seed": 260841,
+            "upper": 0.75,
+            "valid_replicates": 10000
+          },
+          "macro_safe_mean": 0.60625,
+          "macro_unsafe_mean": 1.0,
+          "macro_unsafe_minus_safe": 0.39375,
+          "usable_exact_execution_groups": 16
+        }
+      }
+    },
+    "interaction_ids_appearing_in_multiple_groups": 9,
+    "matching_key": "exact_casefolded_parsed_tool_name_plus_normalized_arguments",
+    "mixed_label_exact_execution_groups": 16,
+    "primary_summary": "equal weight per exact-execution group; pairwise cross-products are reported only as a non-independent descriptive secondary count",
+    "rows_in_groups": 69,
+    "safe_rows": 22,
+    "safe_unsafe_cross_product_pairs": 78,
+    "source_interaction_ids": 39,
+    "unsafe_rows": 47
+  },
+  "caveats": [
+    "Post-stratified rates generalize only to marker-present rows, not all AgentDojo rows.",
+    "Hash selection was deterministic rather than a declared probability sample; no design-based post-stratified CI is reported.",
+    "Clopper-Pearson intervals treat valid base pairs as binomial trials; interaction-clustered estimates are reported separately.",
+    "For deterministic greedy Q8, strict-decision flips establish local sensitivity to these exact edits, not exclusive causal mechanism or latent-score invariance.",
+    "For potentially stochastic GPT-5.5, unsigned single-draw flip counts are descriptive disagreements; the signed contrast is a noisy estimate under stable independent draws and the cached run lacks interleaved repeat, drift, and stability controls.",
+    "AgentHarm exact-execution groups were discovered in the fixed benchmark; their cluster-bootstrap intervals are descriptive sensitivity analyses."
+  ],
+  "generated_from_cached_artifacts_only": true,
+  "inputs": {
+    "cached_hosted_guard_sha256": {
+      "claude-haiku-4.5.jsonl": "90ee8d3bc3b6aaf68aa28dcf1a4019aa5c3409240eeffd0290db2aa3deeaf874",
+      "claude-opus-4.8.jsonl": "3891c942c15538763127a0ea5df27ab94a2caef08df3cb4026d1a70ad70ae685",
+      "claude-sonnet-5.jsonl": "8529b984dfe3c37a504edbddbb59ba84d41409af71019407e18d00549b3eac68",
+      "gpt-5.5.jsonl": "29ff0f3cf457b24df9cf5a949bc5590268348ac1c9f826443bed10f26630fdac",
+      "gpt-5.6-luna.jsonl": "4d509ffe4ee9130e70013f7389f39fda97fe789037e9170558d6870aa6f6f27c",
+      "gpt-5.6-terra.jsonl": "ae6fadd933e74172dbcb5dda90250d9c89abdceb460250b991b77d914e43c914"
+    },
+    "cached_ts_guard_sha256": {
+      "reference/agentdojo/labels.json": "8b589933b477d9eb86d69e2d1c1c915e039412fb61bf56edd075928c7438e817",
+      "reference/agentdojo/preds.json": "e0f4a79416ae1a510bcdc5620b924848390bb65dce71a944f969e088501682f7",
+      "reference/agentharm/labels.json": "51b127b836995f3780ed42885079a8ecce725709f46f89c860cd6c7a21d67cf5",
+      "reference/agentharm/preds.json": "fb21f86e34bc64f3c340c731980e07b05ebec48ea55058f34ea75ae826b00a32"
+    },
+    "implementation": "src/toolsafe_lab/shortcut_audit_reanalysis.py",
+    "sha256": {
+      "artifacts/api_runs/shortcut_audit/agentdojo/authors_v2_structured/gpt-5.5.jsonl": "12fcf4a1fe4e0004dd8cbf3013aed2416b789f7b7729a40cb2b9058f01ee859c",
+      "artifacts/shortcut_audit/cohorts/agentdojo.jsonl": "bdfe8848090aab7f6efd0d575d6547ad88aae84831c8d0792055bb0076c638a2",
+      "artifacts/shortcut_audit/ts_guard_local/ad2f82df3ae3/mlx_q8_g64_greedy/agentdojo.jsonl": "b964adb24d5ba93a1245405741c17dc6ec0ba80debe20cecdea2e3817362b3c3",
+      "results/benchmark_shortcut_audit_cohorts.json": "192748da6fed47adaebfd7d52cfb3185cf891a8cceb83bb684034e841b5bf815"
+    }
+  },
+  "privacy": {
+    "aggregate_only": true,
+    "raw_benchmark_text_included": false,
+    "sample_identifiers_included": false,
+    "tool_names_or_arguments_included": false
+  },
+  "protocol": {
+    "balanced_cohort_estimand": "unweighted valid-pair flip rate in the equal-domain/equal-label marker-present frozen cohort",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 260829,
+    "exact_binomial_interval": "two-sided_95pct_Clopper-Pearson",
+    "poststratified_estimand": "marker-present AgentDojo population weighted by domain x strict label",
+    "stochastic_guard_estimand": "Under stable independent draws, the signed K=1 mean of g(T(x_i))-g(x_i) is an unbiased but noisy estimate of mean_i[Pr(block|T(x_i))-Pr(block|x_i)]. The unsigned flip rate is a different descriptive disagreement estimand. Repeated interleaved draws add precision, drift diagnostics, and stability estimates.",
+    "strict_decision": "score_nonzero_is_block"
+  },
+  "schema_version": 2
+}

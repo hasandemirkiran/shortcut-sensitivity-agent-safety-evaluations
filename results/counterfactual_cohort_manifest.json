@@ -1,0 +1,83 @@
+{
+  "artifacts": {
+    "agentdojo": {
+      "path": "artifacts/shortcut_audit/cohorts/agentdojo.jsonl",
+      "rows": 256,
+      "sha256": "bdfe8848090aab7f6efd0d575d6547ad88aae84831c8d0792055bb0076c638a2",
+      "size_bytes": 2415616
+    },
+    "authorization": {
+      "path": "artifacts/shortcut_audit/cohorts/authorization.jsonl",
+      "rows": 32,
+      "sha256": "7316e3cb2fdcc8665b8ed50dbab068918a3576a4b5642380f572815b84c3aa6a",
+      "size_bytes": 50612
+    }
+  },
+  "cohorts": {
+    "agentdojo": {
+      "derived_rows": 256,
+      "eligible_base_rows": 64,
+      "excluded_base_rows": 0,
+      "exclusion_reasons": {},
+      "input_rows": 1220,
+      "marker_present_by_cell": {
+        "banking/safe": 15,
+        "banking/unsafe": 28,
+        "slack/safe": 54,
+        "slack/unsafe": 19,
+        "travel/safe": 67,
+        "travel/unsafe": 20,
+        "workspace/safe": 185,
+        "workspace/unsafe": 285
+      },
+      "max_per_domain_label_cell": 8,
+      "selected_base_rows": 64,
+      "selected_base_rows_by_cell": {
+        "banking/safe": 8,
+        "banking/unsafe": 8,
+        "slack/safe": 8,
+        "slack/unsafe": 8,
+        "travel/safe": 8,
+        "travel/unsafe": 8,
+        "workspace/safe": 8,
+        "workspace/unsafe": 8
+      },
+      "selection_salt": "260828",
+      "variant_counts": {
+        "combined": 64,
+        "marker_paraphrase": 64,
+        "original": 64,
+        "tool_alias": 64
+      }
+    },
+    "authorization": {
+      "axis_counts": {
+        "fixed_action_changed_context": 4,
+        "fixed_context_changed_action": 4
+      },
+      "derived_rows": 32,
+      "human_validation_status": "manually_screened_directional_pilot_only",
+      "input_rows": 360,
+      "pair_prefixes": [
+        "71cb",
+        "b23f",
+        "cfc4",
+        "8245",
+        "a1a4",
+        "afe7",
+        "4e57",
+        "5750"
+      ],
+      "selected_pairs": 8,
+      "serializations": {
+        "native_structured": 16,
+        "react_execution_only": 16
+      }
+    }
+  },
+  "prompt_sha256": "0e6dd5de7686d45e7fb54d999bf58b5959191d247820d84bc1d095f3d52b1c2f",
+  "prompt_version": "authors_v2_structured",
+  "protocol": "BENCHMARK_SHORTCUT_AUDIT_PROTOCOL_v1.0",
+  "raw_text_in_summary": false,
+  "schema_version": 1
+}
