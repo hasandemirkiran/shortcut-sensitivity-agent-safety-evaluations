@@ -4,10 +4,10 @@ Research artifact for the paper by **Hasan Demirkıran and Jens Ernstberger**, b
 
 [Paper and TAE reviews](https://openreview.net/forum?id=IDTgteFueV)
 
-This repository contains the approved camera-ready draft source, analysis and
-transformation code, frozen protocols, and aggregate results. The camera-ready
-draft is awaiting the authors' final PDF and consistency check. No new experiments
-were run for this release.
+This repository contains the submitted TAE camera-ready source, analysis and
+transformation code, frozen protocols, and aggregate results. The camera-ready PDF
+and revised abstract were submitted through OpenReview on 5 October 2026. No new
+experiments were run for this release.
 
 ## Verify the committed results offline
 
