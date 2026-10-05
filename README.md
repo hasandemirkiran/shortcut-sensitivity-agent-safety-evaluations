@@ -1,6 +1,6 @@
 # Shortcut Sensitivity in Agent-Safety Evaluations
 
-Research artifact for the paper by **Hasan Demirkiran and Jens Ernstberger**, both at **Kontext**.
+Research artifact for the paper by **Hasan Demirkıran and Jens Ernstberger**, both at **[Kontext](https://kontext.security)**.
 
 [Paper and TAE reviews](https://openreview.net/forum?id=IDTgteFueV)
 
