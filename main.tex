@@ -60,24 +60,22 @@ guard decisions.
 We introduce a three-level shortcut-auditing framework and audit completed
 \linuxarena{} trajectories and two \tsbench{}-derived step datasets.  We distinguish
 label predictability, observational guard association, and paired decision
-sensitivity.  In \linuxarena{}, ranking trajectories by shorter average shell
-commands yields AUC $.910$.  In \agentdojo{}, exact-tool lookup falls from
+sensitivity.  In \linuxarena{}, shorter average shell commands strongly predict
+trajectory labels.  In \agentdojo{}, exact-tool lookup falls from
 $F_1=.901$ with mixed-domain folds to $.495$ under domain holdout.  In \agentharm{},
 released \tsguard{} $F_1$ falls from $.902$ under row weighting to $.719$ with equal
-interaction weighting, while balanced accuracy rises from $.754$ to $.776$. 
+interaction weighting, while balanced accuracy rises.
 
 We then test the strongest safe-row marker association in a seven-configuration
-screen ($74.09$ percentage points) on a frozen 64-step \agentdojo{} cohort with 960
-interleaved Haiku calls.  Rewriting the \texttt{<INFORMATION>} marker lowers blocking
+screen on a frozen 64-step \agentdojo{} cohort using repeated, interleaved Haiku
+calls.  Rewriting the \texttt{<INFORMATION>} marker lowers blocking
 by $8.33$ percentage points, while opaque tool aliases raise it by $11.46$ points.  All unsafe calls remain blocked; the changes concern false positives against inherited labels.
 Both effects remain nonzero after subtracting the formatting-placebo effect, with
-exploratory 95\% ranges excluding zero.  Against inherited labels, mean strict
-accuracy across three calls per condition moves from $73.44\%$ on originals to
-$81.77\%$ after marker rewriting and $61.98\%$ after aliasing.  This
+exploratory 95\% ranges excluding zero.  The same edits also change measured
+accuracy against inherited labels.  This
 provides direct evidence that benchmark representation can materially change a
 guard's decisions and measured evaluation performance.  The Haiku-sized effects do
-not reproduce in every tested configuration: Luna's corresponding contrasts are $0.00$ and $+1.04$ points, and
-deterministic Q8 \tsguard{} changes 3 of 64 marker decisions.  We recommend domain
+not reproduce in Luna or deterministic Q8 \tsguard{}.  We recommend domain
 group holdouts, evaluation-unit metrics, and placebo-controlled paired interventions.
 \end{abstract}
 
