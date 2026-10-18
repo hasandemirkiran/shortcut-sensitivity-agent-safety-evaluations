@@ -1,0 +1,28 @@
+{
+  "source_commit": "46358fa424a927a895c6c8322f99032c4eb5155e",
+  "n_steps": 1220,
+  "n_interactions": 589,
+  "f1": {
+    "step_weighted": 0.49547920433996384,
+    "interaction_weighted": 0.5373457841635528,
+    "domain_preserving": 0.5196775087572588
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 42,
+    "global_minus_step": {
+      "difference": 0.04186657982358899,
+      "ci95": [
+        0.014455170678658608,
+        0.06771798641675345
+      ]
+    },
+    "domain_preserving_minus_step": {
+      "difference": 0.02419830441729498,
+      "ci95": [
+        -0.0005538871945059004,
+        0.047678128374162944
+      ]
+    }
+  }
+}
