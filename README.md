@@ -9,6 +9,18 @@ transformation code, frozen protocols, and aggregate results. The camera-ready P
 and revised abstract were submitted through OpenReview on 5 October 2026. No new
 experiments were run for this release.
 
+## How to cite
+
+```bibtex
+@article{demirkiran2026shortcut,
+  title   = {Shortcut Sensitivity in Agent-Safety Evaluations},
+  author  = {Demirkiran, Hasan and Ernstberger, Jens},
+  journal = {arXiv preprint arXiv:2610.22243},
+  year    = {2026},
+  note    = {NeurIPS 2026 workshops TAE and AIWILD}
+}
+```
+
 ## Verify the committed results offline
 
 From the repository root, using Python 3.10 or newer:
