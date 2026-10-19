@@ -1,9 +1,11 @@
 # Rights and upstream assets
 
-This release makes the authors' research artifact publicly accessible. A separate
-reuse license for the authors' code, documentation, manuscript, and derived
-aggregates has not been assigned. Public availability does not itself grant an
-open-source license. Existing notices in supplied files remain applicable.
+This release makes the authors' research artifact publicly accessible. The
+authors' code, scripts, documentation, and derived aggregate results in this
+repository are released under the MIT License (see `LICENSE`). The manuscript
+sources are included for reproducibility; the paper text itself is distributed
+under the terms of the venues where it appears. Existing notices in supplied
+files remain applicable.
 
 Upstream benchmark rows, model weights, and raw provider responses are not
 redistributed or relicensed here. Their owners' licenses and terms govern access
