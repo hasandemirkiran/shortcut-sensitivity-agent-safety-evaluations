@@ -1,8 +1,8 @@
 # Shortcut Sensitivity in Agent-Safety Evaluations
 
-Research artifact for the paper by **Hasan Demirkıran and Jens Ernstberger**, both at **[Kontext](https://kontext.security)**.
+Research artifact for the paper by **Hasan Demirkiran and Jens Ernstberger**, both at **[Kontext](https://kontext.security)**.
 
-[Paper and TAE reviews](https://openreview.net/forum?id=IDTgteFueV)
+[arXiv:2610.22243](https://arxiv.org/abs/2610.22243) · [OpenReview (TAE, with reviews)](https://openreview.net/forum?id=IDTgteFueV). Accepted at the NeurIPS 2026 workshops TAE and AIWILD.
 
 This repository contains the submitted TAE camera-ready source, analysis and
 transformation code, frozen protocols, and aggregate results. The camera-ready PDF

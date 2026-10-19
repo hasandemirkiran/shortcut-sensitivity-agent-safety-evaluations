@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this code or the results, please cite the paper."
+title: "Shortcut Sensitivity in Agent-Safety Evaluations"
+authors:
+  - family-names: Demirkiran
+    given-names: Hasan
+  - family-names: Ernstberger
+    given-names: Jens
+date-released: 2026-10-16
+url: "https://arxiv.org/abs/2610.22243"
+preferred-citation:
+  type: article
+  title: "Shortcut Sensitivity in Agent-Safety Evaluations"
+  authors:
+    - family-names: Demirkiran
+      given-names: Hasan
+    - family-names: Ernstberger
+      given-names: Jens
+  year: 2026
+  journal: "arXiv preprint arXiv:2610.22243"
+  url: "https://arxiv.org/abs/2610.22243"
