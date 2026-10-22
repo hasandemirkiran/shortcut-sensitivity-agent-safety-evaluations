@@ -1,4 +1,4 @@
-
+"""Resample interactions within domains for bootstrap analysis"""
 from collections import defaultdict
 
 
