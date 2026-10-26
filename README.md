@@ -9,6 +9,11 @@ transformation code, frozen protocols, and aggregate results. The camera-ready P
 and revised abstract were submitted through OpenReview on 5 October 2026. No new
 experiments were run for this release.
 
+The state described in the paper is tagged
+[`v1.0-camera-ready`](https://github.com/hasandemirkiran/shortcut-sensitivity-agent-safety-evaluations/tree/v1.0-camera-ready).
+[`extensions/agentdojo_lookup_weighting/`](extensions/agentdojo_lookup_weighting/) is a
+post-publication analysis contributed by Ricardo Ribeiro and is not part of the paper.
+
 ## How to cite
 
 ```bibtex
