@@ -1,0 +1,135 @@
+{
+  "source_commit": "46358fa424a927a895c6c8322f99032c4eb5155e",
+  "n_steps": 1220,
+  "n_interactions": 589,
+  "f1": {
+    "step_weighted": 0.49547920433996384,
+    "interaction_weighted": 0.5373457841635528,
+    "domain_preserving": 0.5196775087572588
+  },
+  "evaluation_units": {
+    "rows": {
+      "tp": 137,
+      "tn": 804,
+      "fp": 64,
+      "fn": 215,
+      "accuracy": 0.771311475409836,
+      "f1": 0.49547920433996384,
+      "balanced_accuracy": 0.6577359132802681
+    },
+    "equal_interaction_weight": {
+      "tp": 79.48730158730159,
+      "tn": 372.63571428571396,
+      "fp": 25.916666666666657,
+      "fn": 110.96031746031737,
+      "accuracy": 0.7676112323820304,
+      "f1": 0.5373457841635528,
+      "balanced_accuracy": 0.6761719682444975
+    },
+    "interaction_majority": {
+      "tp": 94,
+      "tn": 348,
+      "fp": 27,
+      "fn": 120,
+      "accuracy": 0.7504244482173175,
+      "f1": 0.5611940298507463,
+      "balanced_accuracy": 0.6836261682242991
+    }
+  },
+  "task_weighting": {
+    "n_tasks": 58,
+    "metrics": {
+      "tp": 6.844854450104945,
+      "tn": 37.427904138546054,
+      "fp": 2.504719999904075,
+      "fn": 11.222521411445246,
+      "accuracy": 0.7633234239422544,
+      "f1": 0.49931552359556913,
+      "balanced_accuracy": 0.6580639797065704
+    }
+  },
+  "group_cv": {
+    "folds": 5,
+    "evaluation_units": {
+      "rows": {
+        "tp": 309,
+        "tn": 843,
+        "fp": 25,
+        "fn": 43,
+        "accuracy": 0.9442622950819672,
+        "f1": 0.9008746355685131,
+        "balanced_accuracy": 0.9245195328864684
+      },
+      "equal_interaction_weight": {
+        "tp": 171.7936507936509,
+        "tn": 388.7190476190469,
+        "fp": 9.833333333333332,
+        "fn": 18.65396825396825,
+        "accuracy": 0.9516344625003367,
+        "f1": 0.9234365867913502,
+        "balanced_accuracy": 0.9386896748628462
+      },
+      "interaction_majority": {
+        "tp": 190,
+        "tn": 362,
+        "fp": 13,
+        "fn": 24,
+        "accuracy": 0.9371816638370118,
+        "f1": 0.9112709832134293,
+        "balanced_accuracy": 0.9265919003115265
+      }
+    }
+  },
+  "domain_composition": {
+    "banking": {
+      "n_steps": 87,
+      "step_share": 0.07131147540983607,
+      "n_interactions": 45,
+      "interaction_share": 0.07640067911714771,
+      "step_f1": 0.0,
+      "interaction_f1": 0.0
+    },
+    "slack": {
+      "n_steps": 101,
+      "step_share": 0.08278688524590164,
+      "n_interactions": 28,
+      "interaction_share": 0.04753820033955857,
+      "step_f1": 0.0,
+      "interaction_f1": 0.0
+    },
+    "travel": {
+      "n_steps": 177,
+      "step_share": 0.14508196721311475,
+      "n_interactions": 42,
+      "interaction_share": 0.07130730050933787,
+      "step_f1": 0.3448275862068966,
+      "interaction_f1": 0.33337799812407876
+    },
+    "workspace": {
+      "n_steps": 855,
+      "step_share": 0.7008196721311475,
+      "n_interactions": 474,
+      "interaction_share": 0.8047538200339559,
+      "step_f1": 0.5641025641025641,
+      "interaction_f1": 0.5907437601906436
+    }
+  },
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 260828,
+    "global_minus_step": {
+      "difference": 0.04186657982358899,
+      "ci95": [
+        0.014271608947263134,
+        0.06782654125788032
+      ]
+    },
+    "domain_preserving_minus_step": {
+      "difference": 0.02419830441729498,
+      "ci95": [
+        -0.0010736576120055532,
+        0.048209963530015706
+      ]
+    }
+  }
+}
